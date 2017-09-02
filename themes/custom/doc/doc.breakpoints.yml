@@ -1,0 +1,13 @@
+# https://www.drupal.org/docs/8/theming-drupal-8/working-with-breakpoints-in-drupal-8
+doc.tablette:
+  label: tablette
+  mediaQuery: 'all and (min-width: 560px) and (max-width: 850px)'
+  weight: 1
+  multipliers:
+    - 1x
+doc.mobile:
+  label: mobile
+  mediaQuery: 'all and (max-width:560)'
+  weight: 1
+  multipliers:
+    - 1x
