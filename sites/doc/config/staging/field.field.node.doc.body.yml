@@ -1,0 +1,22 @@
+uuid: 2544aa5b-9918-4707-8981-8b839586f3da
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.doc
+  module:
+    - text
+id: node.doc.body
+field_name: body
+entity_type: node
+bundle: doc
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
