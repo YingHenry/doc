@@ -1,0 +1,22 @@
+uuid: 27291f9b-f7cf-408e-b2aa-2b8db6e98b9b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - doc
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: doc_powered
+theme: doc
+region: footer_fifth
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Propulsé par Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

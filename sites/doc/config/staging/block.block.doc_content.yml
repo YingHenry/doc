@@ -1,0 +1,22 @@
+uuid: 5972058d-99f9-4d87-9772-583dfd40cf1e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - doc
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: doc_content
+theme: doc
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenu de la page principale'
+  provider: system
+  label_display: '0'
+visibility: {  }
