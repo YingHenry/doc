@@ -1,11 +1,11 @@
 uuid: d4a1909b-a6dc-45ef-9901-98a8ed0a9176
-name: Drupal
+name: Doc
 mail: example@domain.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /accueil
 admin_compact_mode: false
 weight_select_max: 100
 langcode: fr

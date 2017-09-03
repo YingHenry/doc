@@ -1,0 +1,30 @@
+uuid: 7030b7ba-46f3-46ff-a9a0-02866c82d733
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.detail
+    - field.field.media.image.field_image
+    - media_entity.bundle.image
+  module:
+    - image
+id: media.image.detail
+targetEntityType: media
+bundle: image
+mode: detail
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

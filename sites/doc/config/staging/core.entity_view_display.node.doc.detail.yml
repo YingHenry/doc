@@ -1,18 +1,19 @@
-uuid: 2804346b-4c82-491f-9a7c-24027d7ecf81
+uuid: 70128093-528d-49d2-b2d3-579bac905dc2
 langcode: fr
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.detail
     - field.field.node.doc.body
     - field.field.node.doc.field_media
     - node.type.doc
   module:
     - text
     - user
-id: node.doc.default
+id: node.doc.detail
 targetEntityType: node
 bundle: doc
-mode: default
+mode: detail
 content:
   body:
     label: hidden

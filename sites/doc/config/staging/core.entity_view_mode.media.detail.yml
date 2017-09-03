@@ -1,0 +1,10 @@
+uuid: 93c0b948-2d40-49d6-a5e7-0e129e140c8a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media_entity
+id: media.detail
+label: Détail
+targetEntityType: media
+cache: true

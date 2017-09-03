@@ -1,16 +1,17 @@
-uuid: db9d23d7-427f-40f7-bafb-1a9c8b98848d
+uuid: 0db6579c-f0ad-4d3a-b306-d487594d82d8
 langcode: fr
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.detail
     - field.field.node.collection.field_doc
     - node.type.collection
   module:
     - user
-id: node.collection.default
+id: node.collection.detail
 targetEntityType: node
 bundle: collection
-mode: default
+mode: detail
 content:
   field_doc:
     weight: 101
