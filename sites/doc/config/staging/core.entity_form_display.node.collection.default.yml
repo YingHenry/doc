@@ -1,38 +1,27 @@
-uuid: b7235b42-2f04-4b75-9aa1-89b10a429ff6
+uuid: e907bb96-fb59-404d-a006-7fe6e8ea9a96
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.doc.body
-    - field.field.node.doc.field_media
-    - node.type.doc
+    - field.field.node.collection.field_doc
+    - node.type.collection
   module:
     - entity_browser_entity_form
     - inline_entity_form
     - path
-    - text
-id: node.doc.default
+id: node.collection.default
 targetEntityType: node
-bundle: doc
+bundle: collection
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 31
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_media:
-    weight: 32
+  field_doc:
+    weight: 31
     settings:
       form_mode: default
       label_singular: ''
@@ -43,7 +32,7 @@ content:
       override_labels: false
     third_party_settings:
       entity_browser_entity_form:
-        entity_browser_id: entity_browser_media
+        entity_browser_id: entity_browser_doc
     type: inline_entity_form_complex
     region: content
   langcode:

@@ -1,4 +1,4 @@
-uuid: d8ebc650-934c-40c2-9fd0-8a7c22e20e51
+uuid: 0be5184a-ecd0-4aa7-8267-df2838a44db0
 langcode: fr
 status: true
 dependencies:
@@ -9,8 +9,8 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: Doc
-type: doc
+name: Collection
+type: collection
 description: ''
 help: ''
 new_revision: true

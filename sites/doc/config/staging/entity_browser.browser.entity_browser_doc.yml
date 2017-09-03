@@ -1,31 +1,31 @@
-uuid: 11f84069-e75a-460f-bd9e-3bf340215946
+uuid: 89fa9f17-fe7d-43de-8282-3d626187f843
 langcode: fr
 status: true
 dependencies:
   config:
-    - views.view.media_browser
+    - views.view.entity_browser_doc
   module:
     - views
-name: media
-label: Media
+name: entity_browser_doc
+label: 'Entity browser : Doc'
 display: modal
 display_configuration:
   width: '650'
   height: '500'
-  link_text: Media
+  link_text: Select
   auto_open: false
 selection_display: no_display
 selection_display_configuration: {  }
 widget_selector: single
 widget_selector_configuration: {  }
 widgets:
-  1c0b6d5b-7855-4b58-98c6-5cd49510243c:
+  1a516a31-2ffb-471f-b705-c82a955e885f:
     settings:
-      view: media_browser
+      view: entity_browser_doc
       view_display: entity_browser_1
       submit_text: Select
       auto_select: false
-    uuid: 1c0b6d5b-7855-4b58-98c6-5cd49510243c
-    weight: -9
-    label: 'Use existing'
+    uuid: 1a516a31-2ffb-471f-b705-c82a955e885f
+    weight: 1
+    label: Select
     id: view

@@ -1,0 +1,29 @@
+uuid: 9eacbc87-317b-4442-a21e-4b1ffa700791
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_doc
+    - node.type.collection
+    - node.type.doc
+id: node.collection.field_doc
+field_name: field_doc
+entity_type: node
+bundle: collection
+label: Doc
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      doc: doc
+    sort:
+      field: changed
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

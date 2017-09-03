@@ -1,4 +1,4 @@
-uuid: 4f7bdb29-163d-409d-990b-154d804c19b9
+uuid: 5d3d9045-1ee2-4f59-8885-ac9007d81dbc
 langcode: fr
 status: true
 dependencies:
@@ -10,8 +10,8 @@ dependencies:
     - image
     - media_entity
     - user
-id: media_browser
-label: 'Media browser'
+id: entity_browser_media
+label: 'Entity browser : Media'
 module: views
 description: ''
 tag: ''
