@@ -1,0 +1,21 @@
+uuid: be53d950-3e93-4cf3-8999-8018fa1564b9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_presentation
+  module:
+    - text
+    - user
+id: user.user.field_presentation
+field_name: field_presentation
+entity_type: user
+bundle: user
+label: Présentation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
