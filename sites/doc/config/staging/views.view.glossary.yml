@@ -1,6 +1,6 @@
 uuid: ec540f47-5801-47a9-9d39-48e1ef74a3f6
 langcode: fr
-status: false
+status: true
 dependencies:
   config:
     - system.menu.main
@@ -275,29 +275,41 @@ display:
       style:
         type: table
         options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          override: true
+          sticky: false
+          caption: ''
+          summary: ''
+          description: ''
           columns:
             title: title
             name: name
             changed: changed
-          default: title
           info:
             title:
               sortable: true
+              default_sort_order: asc
+              align: ''
               separator: ''
+              empty_column: false
+              responsive: ''
             name:
               sortable: true
+              default_sort_order: asc
+              align: ''
               separator: ''
+              empty_column: false
+              responsive: ''
             changed:
               sortable: true
+              default_sort_order: asc
+              align: ''
               separator: ''
-          override: true
-          sticky: false
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-          uses_fields: false
-          order: asc
-          summary: ''
+              empty_column: false
+              responsive: ''
+          default: name
           empty_table: false
       row:
         type: fields

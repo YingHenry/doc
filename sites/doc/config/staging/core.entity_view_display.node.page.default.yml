@@ -1,0 +1,18 @@
+uuid: b0a125d8-1c36-4390-8877-4b78fcbe0821
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.page
+  module:
+    - user
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true
