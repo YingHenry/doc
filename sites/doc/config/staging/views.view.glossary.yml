@@ -1,6 +1,6 @@
 uuid: ec540f47-5801-47a9-9d39-48e1ef74a3f6
 langcode: fr
-status: true
+status: false
 dependencies:
   config:
     - system.menu.main
