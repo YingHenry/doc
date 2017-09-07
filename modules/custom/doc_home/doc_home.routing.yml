@@ -1,0 +1,7 @@
+doc_home.home:
+  path: '/accueil'
+  defaults:
+    _controller: '\Drupal\doc_home\Controller\DocHomeController::home'
+    _title: 'Accueil'
+  requirements:
+    _permission: 'access content'
