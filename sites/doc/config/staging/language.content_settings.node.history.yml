@@ -1,0 +1,11 @@
+uuid: 75b100bd-2a1a-4d21-a7d2-6df0bc840135
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.history
+id: node.history
+target_entity_type_id: node
+target_bundle: history
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,30 @@
+<?php
+
+use \Drupal\node\Entity\Node;
+use \Drupal\user\Entity\User;
+
+function doc_history_preprocess_node(&$variables)
+{
+  $node = $variables['node'];
+
+  if ($node->getType() == 'doc') {
+  	$currentPath = \Drupal::service('path.current')->getPath();
+  	$currentPathAlias = \Drupal::service('path.alias_manager')->getAliasByPath($currentPath);
+  	//$requestTime = \Drupal::time()->getRequestTime();
+  	//$uid = \Drupal::currentUser()->id();
+
+  	$params = [
+  		'type' => 'history',
+  		'langcode' => 'fr',
+  		'title' => $currentPathAlias,
+  		//'created' => $requestTime,
+
+  		'field_doc' => [
+  			'target_id' => $node->id(),
+  		],
+  	];
+
+    $node = Node::create($params);
+    $node->save();
+  }
+}
