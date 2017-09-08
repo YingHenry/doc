@@ -1,39 +1,35 @@
 <?php
 
-use \Drupal\node\Entity\Node;
-use \Drupal\user\Entity\User;
-
 function doc_history_preprocess_node(&$variables)
 {
   $node = $variables['node'];
 
   if ($node->getType() == 'doc') {
-  	/*
-  	$currentPath = \Drupal::service('path.current')->getPath();
-  	$currentPathAlias = \Drupal::service('path.alias_manager')->getAliasByPath($currentPath);
-  	//$requestTime = \Drupal::time()->getRequestTime();
-  	//$uid = \Drupal::currentUser()->id();
+    $dateFormatter = \Drupal::service('date.formatter');
 
-  	$params = [
-  		'type' => 'history',
-  		'langcode' => 'fr',
-  		'title' => $currentPathAlias,
-  		//'created' => $requestTime,
-  		'field_doc' => [
-  			'target_id' => $node->id(),
-  		],
-  	];
+    $params = [
+      'granularity' => 1,
+      'return_as_object' => true,
+    ];
 
-    //$node = Node::create($params);
-    //$node->save();
-		*/
-		
-  	// on récupère les 5 derniers node consulté par l'utilisateur
-  	$params = [
-	    ':uid' => 1,
-  	];
+    $requestTime = \Drupal::time()->getRequestTime();
 
-  	$results = db_query('SELECT nid, timestamp FROM {history} WHERE uid = :uid ORDER BY timestamp DESC LIMIT 5', $params)->fetchAll();
-  	dpm($results);
+    $variables['createdAgo'] = $dateFormatter->formatDiff($node->getCreatedTime(), $requestTime, $params);
   }
 }
+
+function doc_history_theme($existing, $type, $theme, $path)
+{
+  $themes = [
+    /*
+    'history' => [
+      'variables' => [
+        'data' => null,
+      ],
+    ],
+    */
+  ];
+
+  return $themes;
+}
+

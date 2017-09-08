@@ -3,6 +3,7 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.list
     - field.storage.node.field_media
     - node.type.doc
   module:
@@ -57,7 +58,10 @@ display:
       style:
         type: default
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: list
       fields:
         field_media:
           id: field_media
