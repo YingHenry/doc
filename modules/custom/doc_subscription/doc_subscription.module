@@ -1,0 +1,24 @@
+<?php
+
+use \Drupal\user\Entity\User;
+
+function doc_subscription_preprocess_node(&$variables) {
+	$authorId = $variables['node']->getOwner()->id();
+  $currentUserId = \Drupal::currentUser()->id();
+  $currentUser = User::load($currentUserId);
+	$subcriptionValues = $currentUser->get('field_subscription')->getValue();
+
+	// on regarde si l'uid existe parmi les références
+	if (!empty($subcriptionValues)) {
+		foreach ($subcriptionValues as $key => $subcriptionValue) {
+			if ($authorId == $subcriptionValue['target_id']) {
+				$variables['subscription'] = t('Unsubscribe');
+				break;
+			} else {
+				$variables['subscription'] = t('Subscribe');
+			}
+		}
+	}
+
+	$variables['authorId'] = $authorId;
+}

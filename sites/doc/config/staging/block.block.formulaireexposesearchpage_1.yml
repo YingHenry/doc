@@ -12,7 +12,7 @@ dependencies:
 id: formulaireexposesearchpage_1
 theme: doc
 region: content
-weight: -5
+weight: -3
 provider: null
 plugin: 'views_exposed_filter_block:search-page_1'
 settings:

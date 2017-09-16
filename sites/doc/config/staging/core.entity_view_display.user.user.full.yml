@@ -1,8 +1,9 @@
-uuid: e59a0362-c4ba-4351-b7c7-75ffb2369953
+uuid: dd6e7b06-8828-491e-b331-973f51bbf043
 langcode: fr
-status: true
+status: false
 dependencies:
   config:
+    - core.entity_view_mode.user.full
     - field.field.user.user.field_collection
     - field.field.user.user.field_presentation
     - field.field.user.user.field_subscription
@@ -14,10 +15,10 @@ dependencies:
     - user
 _core:
   default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
-id: user.user.default
+id: user.user.full
 targetEntityType: user
 bundle: user
-mode: default
+mode: full
 content:
   field_collection:
     weight: 3

@@ -1,27 +1,23 @@
-uuid: a3ee1e13-6ed9-4764-9331-a876d9058fe3
+uuid: 90fb8864-b42d-4787-a3c8-057895c27c21
 langcode: fr
 status: true
 dependencies:
-  config:
-    - views.view.trend
   module:
+    - doc_subscription
     - system
-    - views
   theme:
     - doc
-id: views_block__trend_block_1
+id: subscriptionblock
 theme: doc
 region: content
-weight: -1
+weight: 1
 provider: null
-plugin: 'views_block:trend-block_1'
+plugin: doc_subscription_block
 settings:
-  id: 'views_block:trend-block_1'
-  label: ''
-  provider: views
+  id: doc_subscription_block
+  label: Subscriptions
+  provider: doc_subscription
   label_display: visible
-  views_label: ''
-  items_per_page: none
 visibility:
   request_path:
     id: request_path

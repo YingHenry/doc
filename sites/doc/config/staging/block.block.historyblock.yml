@@ -11,7 +11,7 @@ dependencies:
 id: historyblock
 theme: doc
 region: content
-weight: -1
+weight: 2
 provider: null
 plugin: doc_history_block
 settings:
