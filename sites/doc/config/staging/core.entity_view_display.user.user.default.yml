@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.user.user.field_collection
+    - field.field.user.user.field_follower_count
     - field.field.user.user.field_presentation
     - field.field.user.user.field_subscription
     - field.field.user.user.user_picture
@@ -26,6 +27,15 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_follower_count:
+    weight: 5
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
     region: content
   field_presentation:
     weight: 2

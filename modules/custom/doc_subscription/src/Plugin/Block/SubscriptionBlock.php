@@ -21,12 +21,10 @@ class SubscriptionBlock extends BlockBase {
     $currentUser = User::load($currentUserId);
     $subcriptionValues = $currentUser->get('field_subscription')->getValue();
 
-    // on charge
-    $nids = [];
+    // on charge les derniers docs de chaque abonnement
+    $builds = [];
 
     if (!empty($subcriptionValues)) {
-      $builds = [];
-
       foreach ($subcriptionValues as $subcriptionValue) {
         $build = $this->loadView('subscription', 'block_1', [$subcriptionValue['target_id']]);
         array_unshift($builds, $build);

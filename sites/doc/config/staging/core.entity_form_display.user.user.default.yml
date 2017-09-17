@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.user.user.field_collection
+    - field.field.user.user.field_follower_count
     - field.field.user.user.field_presentation
     - field.field.user.user.field_subscription
     - field.field.user.user.user_picture
@@ -46,6 +47,13 @@ content:
       entity_browser_entity_form:
         entity_browser_id: _none
     type: inline_entity_form_complex
+    region: content
+  field_follower_count:
+    weight: 9
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
     region: content
   field_presentation:
     weight: 2
