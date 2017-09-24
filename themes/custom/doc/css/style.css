@@ -1,0 +1,33 @@
+/* bloc logo */
+#block-doc-branding {
+	float: left;
+}
+
+/* bloc recherche */
+#block-formulaireexposesearchpage-1,
+#views-exposed-form-search-page-1 #edit-actions {
+	float: left;
+	clear: none;
+}
+
+/* bloc utilisateur */
+#block-doc-account-menu,
+#block-doc-account-menu .menu-item {
+	float: left;
+}
+
+/* bloc langue*/
+#block-selecteurdelangue {
+	float: left;
+}
+
+/* blocs vidéos */
+.view-content {
+	overflow: hidden;
+}
+
+#block-historyblock article,
+.views-row {
+	float: left;
+}
+

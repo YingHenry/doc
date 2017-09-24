@@ -11,8 +11,8 @@ dependencies:
     - doc
 id: formulaireexposesearchpage_1
 theme: doc
-region: content
-weight: -3
+region: header
+weight: -6
 provider: null
 plugin: 'views_exposed_filter_block:search-page_1'
 settings:

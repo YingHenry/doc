@@ -10,7 +10,7 @@ dependencies:
 id: subscriptionblock
 theme: doc
 region: content
-weight: 1
+weight: 0
 provider: null
 plugin: doc_subscription_block
 settings:

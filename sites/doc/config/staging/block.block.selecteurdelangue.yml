@@ -8,8 +8,8 @@ dependencies:
     - doc
 id: selecteurdelangue
 theme: doc
-region: secondary_menu
-weight: -6
+region: header
+weight: -4
 provider: null
 plugin: 'language_block:language_interface'
 settings:

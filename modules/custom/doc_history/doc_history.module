@@ -21,13 +21,11 @@ function doc_history_preprocess_node(&$variables)
 function doc_history_theme($existing, $type, $theme, $path)
 {
   $themes = [
-    /*
     'history' => [
       'variables' => [
         'data' => null,
       ],
     ],
-    */
   ];
 
   return $themes;

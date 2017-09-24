@@ -37,8 +37,8 @@ class HistoryBlock extends BlockBase {
 
     $build = \Drupal::entityTypeManager()->getViewBuilder('node')->viewMultiple($nodes, 'list');
 
-    return $build;
-    /*
+    //return $build;
+
     return array(
       '#theme' => 'history',
       '#data' => array(
@@ -48,6 +48,5 @@ class HistoryBlock extends BlockBase {
         'max-age' => 0,
       )
     );
-    */
   }
 }
