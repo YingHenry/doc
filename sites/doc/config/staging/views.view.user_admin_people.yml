@@ -9,7 +9,7 @@ _core:
 id: user_admin_people
 label: Personnes
 module: user
-description: 'Find and manage people interacting with your site.'
+description: 'Trouver et gérer les personnes interagissant avec votre site.'
 tag: default
 base_table: users_field_data
 base_field: uid
@@ -592,7 +592,7 @@ display:
           exposed: true
           expose:
             operator_id: combine_op
-            label: 'Name or email contains'
+            label: 'Nom ou courriel contenant'
             description: ''
             use_operator: false
             operator: combine_op
@@ -891,7 +891,7 @@ display:
       menu:
         type: 'default tab'
         title: Lister
-        description: 'Find and manage people interacting with your site.'
+        description: 'Trouver et gérer les personnes interagissant avec votre site.'
         menu_name: admin
         weight: -10
         context: ''

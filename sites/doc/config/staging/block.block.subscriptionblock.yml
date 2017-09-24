@@ -15,7 +15,7 @@ provider: null
 plugin: doc_subscription_block
 settings:
   id: doc_subscription_block
-  label: Subscriptions
+  label: Abonnements
   provider: doc_subscription
   label_display: visible
 visibility:

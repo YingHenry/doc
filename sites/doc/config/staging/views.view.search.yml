@@ -6,7 +6,6 @@ dependencies:
     - field.storage.node.body
     - node.type.doc
   module:
-    - better_exposed_filters
     - node
     - text
     - user
@@ -41,7 +40,7 @@ display:
           query_comment: ''
           query_tags: {  }
       exposed_form:
-        type: bef
+        type: basic
         options:
           submit_button: Search
           reset_button: false
@@ -50,20 +49,6 @@ display:
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
-          input_required: false
-          text_input_required: 'Sélectionnez n''importe quel filtre et cliquez sur Appliquer pour voir les résultats'
-          bef:
-            general:
-              allow_secondary: false
-              secondary_label: 'Options avancées'
-              autosubmit: false
-              autosubmit_hide: false
-            combine:
-              bef_format: default
-              more_options:
-                is_secondary: false
-                placeholder_text: ''
-          text_input_required_format: basic_html
       pager:
         type: full
         options:

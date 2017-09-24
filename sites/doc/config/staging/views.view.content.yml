@@ -586,7 +586,7 @@ display:
       tab_options:
         type: normal
         title: Contenu
-        description: 'Find and manage content'
+        description: 'Trouver et gérer le contenu'
         menu_name: admin
         weight: -10
       display_extenders: {  }

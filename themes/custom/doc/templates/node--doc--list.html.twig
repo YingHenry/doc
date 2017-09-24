@@ -80,12 +80,16 @@
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-    {{ content.field_media }}
+    {% if content.field_media.0 %}
+      {{ content.field_media }}
+    {% else %}
+      <a class="no-image" href="{{ url }}" title="doc"></a>
+    {% endif %}
     <h2{{ title_attributes.addClass('node__title') }}>
       <a href="{{ url }}" rel="bookmark">{{ label }}</a>
     </h2>
     {{ author_name }}
     {{ content.links }}
-    {{ createdAgo }}
+    <div class="created-ago">{{ createdAgo }}</div>
   </div>
 </article>

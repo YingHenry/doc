@@ -12,7 +12,7 @@ _core:
 id: glossary
 label: Glossary
 module: node
-description: 'All content, by letter.'
+description: 'Tous les contenus, triés par lettre.'
 tag: default
 base_table: node_field_data
 base_field: nid

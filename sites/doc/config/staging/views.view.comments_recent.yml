@@ -8,9 +8,9 @@ dependencies:
 _core:
   default_config_hash: HacS-nsDH7uyoKhQHNyV_MNRClmPVuhU_fWZgNuEyIs
 id: comments_recent
-label: 'Recent comments'
+label: 'Commentaires récents'
 module: views
-description: 'Recent comments.'
+description: 'Commentaires récents.'
 tag: default
 base_table: comment_field_data
 base_field: cid
@@ -220,7 +220,7 @@ display:
           plugin_id: field
           entity_type: comment
           entity_field: cid
-      title: 'Recent comments'
+      title: 'Commentaires récents'
       empty:
         area_text_custom:
           id: area_text_custom
@@ -248,7 +248,7 @@ display:
     display_title: Bloc
     position: 1
     display_options:
-      block_description: 'Recent comments'
+      block_description: 'Commentaires récents'
       block_category: 'Listes (Views)'
       allow:
         items_per_page: true

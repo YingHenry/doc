@@ -1,5 +1,30 @@
+/* général */
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h2 {
+	margin : 2em 0 0;
+}
+
+#header > div,
+#main,
+footer > div {
+  max-width: 1098px;
+  margin: 0 auto;
+}
+
 /* bloc logo */
 #block-doc-branding {
+	float: left;
+}
+
+.region-header {
 	float: left;
 }
 
@@ -22,12 +47,37 @@
 }
 
 /* blocs vidéos */
-.view-content {
+.views-element-container .view-content {
 	overflow: hidden;
 }
 
-#block-historyblock article,
-.views-row {
+.views-element-container .view-content > article,
+.views-element-container .view-content > .views-row {
 	float: left;
+	width: 210px;
+	margin-right: 8px;
+	margin-top: 16px;
 }
 
+.views-element-container .no-image {
+	width: 210px;
+	height: 120px;
+	background-color: #eee;
+	display: block;
+}
+
+.views-element-container .view-content h2 {
+  margin: 0.5em 0 0.2em;
+  font-size: 1.0em;
+}
+
+.views-element-container .field--name-uid,
+.views-element-container .statistics-counter,
+.views-element-container .created-ago {
+	font-size: 0.9em;
+	padding: 0;
+}
+
+.views-element-container .field--name-uid a {
+	color: #333;
+}

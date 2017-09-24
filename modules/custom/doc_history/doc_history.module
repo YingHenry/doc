@@ -13,8 +13,8 @@ function doc_history_preprocess_node(&$variables)
     ];
 
     $requestTime = \Drupal::time()->getRequestTime();
-
-    $variables['createdAgo'] = $dateFormatter->formatDiff($node->getCreatedTime(), $requestTime, $params);
+    $createdAgo = $dateFormatter->formatDiff($node->getCreatedTime(), $requestTime, $params)->getString();
+    $variables['createdAgo'] = t('@createdAgo ago', ['@createdAgo' => $createdAgo]);
   }
 }
 

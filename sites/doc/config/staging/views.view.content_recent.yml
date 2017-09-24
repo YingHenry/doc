@@ -11,7 +11,7 @@ _core:
 id: content_recent
 label: 'Contenu récent'
 module: node
-description: 'Recent content.'
+description: 'Contenu récent.'
 tag: default
 base_table: node_field_data
 base_field: nid

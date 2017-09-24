@@ -10,7 +10,7 @@ _core:
 id: files
 label: Fichiers
 module: file
-description: 'Find and manage files.'
+description: 'Trouver et gérer les fichiers.'
 tag: default
 base_table: file_managed
 base_field: fid
@@ -165,7 +165,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Fid
+          label: 'Identifiant (FID)'
           exclude: true
           element_type: ''
           element_class: ''
@@ -410,7 +410,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Upload date'
+          label: 'Date de transfert'
           exclude: false
           alter:
             alter_text: false
@@ -568,7 +568,7 @@ display:
           decimal: .
           separator: ','
           format_plural: true
-          format_plural_string: "1 place\x03@count places"
+          format_plural_string: "@count emplacement\x03@count emplacements"
           prefix: ''
           suffix: ''
           plugin_id: numeric
@@ -704,7 +704,7 @@ display:
           table: views
           field: area_text_custom
           empty: true
-          content: 'No files available.'
+          content: 'Aucun fichier disponible.'
           plugin_id: text_custom
       relationships:
         fid:
@@ -731,7 +731,7 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: 'Files overview'
+    display_title: 'Vue d''ensemble des fichiers'
     position: 1
     display_options:
       path: admin/content/files
@@ -915,7 +915,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Registering module'
+          label: 'Enregistrement du module'
           exclude: false
           alter:
             alter_text: false
@@ -1030,7 +1030,7 @@ display:
             title_enable: false
             title: Tout
           title_enable: true
-          title: 'File usage information for {{ arguments.fid }}'
+          title: 'Information d''utilisation du fichier {{ arguments.fid }}'
           default_argument_type: fixed
           default_argument_options:
             argument: ''

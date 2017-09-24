@@ -16,7 +16,7 @@ provider: null
 plugin: doc_history_block
 settings:
   id: doc_history_block
-  label: History
+  label: 'Dernières consultations'
   provider: doc_history
   label_display: visible
 visibility:
