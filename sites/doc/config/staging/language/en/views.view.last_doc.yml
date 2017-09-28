@@ -1,0 +1,5 @@
+label: Latest
+display:
+  default:
+    display_options:
+      title: Latest
