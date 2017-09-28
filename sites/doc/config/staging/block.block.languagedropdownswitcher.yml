@@ -9,7 +9,7 @@ dependencies:
 id: languagedropdownswitcher
 theme: doc
 region: header
-weight: 0
+weight: -5
 provider: null
 plugin: 'language_dropdown_block:language_interface'
 settings:
@@ -19,7 +19,7 @@ settings:
   label_display: '0'
   showall: 0
   tohome: 0
-  width: '165'
+  width: '100'
   display: '1'
   widget: '0'
   msdropdown:

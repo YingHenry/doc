@@ -1,6 +1,6 @@
 uuid: 0c63164c-45d0-4fd0-932f-0f0ef91b3981
 langcode: fr
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -19,7 +19,7 @@ settings:
   label: 'Marque du site'
   provider: system
   label_display: '0'
-  use_site_logo: true
-  use_site_name: false
+  use_site_logo: false
+  use_site_name: true
   use_site_slogan: false
 visibility: {  }

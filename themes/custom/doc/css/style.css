@@ -9,13 +9,13 @@ a:hover {
 }
 
 h2 {
-	margin : 2em 0 0;
+	margin : 2rem 0 0;
 }
 
 #header > div,
 #main,
 footer > div {
-  max-width: 1098px;
+  max-width: 68.625rem;
   margin: 0 auto;
 }
 
@@ -24,8 +24,15 @@ footer > div {
 	float: left;
 }
 
-.region-header {
-	float: left;
+#block-doc-branding .site-name {
+  margin: 0.45rem 1rem 0 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+
+#block-doc-branding .site-name a {
+	color: #ACC;
 }
 
 /* bloc recherche */
@@ -35,15 +42,53 @@ footer > div {
 	clear: none;
 }
 
+#views-exposed-form-search-page-1 > div > div {
+	margin: 1rem 0 0;
+}
+
+#views-exposed-form-search-page-1 #edit-combine {
+  height: 1.5rem;
+  width: 25rem;
+}
+
+#views-exposed-form-search-page-1 #edit-submit-search {
+  height: 1.875rem;
+  border: 1px solid #aaa;
+  border-left: none;
+  background-color: #eee;
+  padding: 0 1rem;
+  color: #777;
+}
+
 /* bloc utilisateur */
-#block-doc-account-menu,
+#block-doc-account-menu {
+	float: right;
+}
+
 #block-doc-account-menu .menu-item {
 	float: left;
 }
 
+#block-doc-account-menu li {
+  padding: 0.4rem 0.5rem;
+}
+
+#block-doc-account-menu li a {
+	color: #555;
+}
+
 /* bloc langue*/
 #block-languagedropdownswitcher {
-	float: left;
+	float: right;
+}
+
+#block-languagedropdownswitcher select {
+	width: 10rem;
+  margin: 1rem;
+  padding: 0 0.5rem;
+  height: 1.8rem;
+  background-color: #eee;
+  color: #777;
 }
 
 /* blocs vidéos */
@@ -54,27 +99,27 @@ footer > div {
 .views-element-container .view-content > article,
 .views-element-container .view-content > .views-row {
 	float: left;
-	width: 210px;
-	margin-right: 8px;
-	margin-top: 16px;
+	width: 13.125rem;
+	margin-right: 0.5rem;
+	margin-top: 1rem;
 }
 
 .views-element-container .no-image {
-	width: 210px;
-	height: 120px;
+	width: 13.125rem;
+	height: 7.5rem;
 	background-color: #eee;
 	display: block;
 }
 
 .views-element-container .view-content h2 {
-  margin: 0.5em 0 0.2em;
-  font-size: 1.0em;
+  margin: 0.5rem 0 0.2rem;
+  font-size: 1.0rem;
 }
 
 .views-element-container .field--name-uid,
 .views-element-container .statistics-counter,
 .views-element-container .created-ago {
-	font-size: 0.9em;
+	font-size: 0.9rem;
 	padding: 0;
 }
 
