@@ -36,6 +36,10 @@ footer > div {
 	color: #ACC;
 }
 
+#block-doc-branding .site-name a:hover {
+	text-decoration: none;
+}
+
 /* bloc recherche */
 #block-formulaireexposesearchpage-1,
 #views-exposed-form-search-page-1 #edit-actions {
