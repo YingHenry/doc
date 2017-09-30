@@ -1,4 +1,6 @@
 /* général */
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
 a {
 	text-decoration: none;
 	color: black;
@@ -11,6 +13,7 @@ a:hover {
 h2 {
 	margin : 2rem 0 0;
 	color: #777;
+	font-size: 1.5rem;
 }
 
 #header > div,
@@ -26,14 +29,15 @@ footer > div {
 }
 
 #block-doc-branding .site-name {
-  margin: 0.45rem 1rem 0 0;
-  font-size: 2.5rem;
+  margin: 0 1.5rem 0 0.5rem;
+  font-size: 3rem;
   font-weight: bold;
   letter-spacing: -2px;
 }
 
 #block-doc-branding .site-name a {
 	color: #ACC;
+	font-family: 'Satisfy', cursive;
 }
 
 #block-doc-branding .site-name a:hover {
@@ -121,6 +125,7 @@ footer > div {
 .views-element-container .view-content h2 {
   margin: 0.5rem 0 0.2rem;
   font-size: 1.0rem;
+  font-family: Arial;
 }
 
 .views-element-container .field--name-uid,
