@@ -10,6 +10,7 @@ a:hover {
 
 h2 {
 	margin : 2rem 0 0;
+	color: #333;
 }
 
 #header > div,
@@ -47,17 +48,19 @@ footer > div {
 }
 
 #views-exposed-form-search-page-1 #edit-combine {
+	border: 1px solid #ddd;
   height: 1.5rem;
   width: 25rem;
+  padding: 0 0.5rem;
 }
 
 #views-exposed-form-search-page-1 #edit-submit-search {
   height: 1.875rem;
-  border: 1px solid #aaa;
   border-left: none;
-  background-color: #eee;
-  padding: 0 1rem;
+  background-color: white;
+  padding: 0 0.5rem;
   color: #777;
+  border: none;
 }
 
 /* bloc utilisateur */
@@ -83,12 +86,12 @@ footer > div {
 }
 
 #block-languagedropdownswitcher select {
-	width: 10rem;
-  margin: 1rem;
-  padding: 0 0.5rem;
-  height: 1.8rem;
-  background-color: #eee;
-  color: #777;
+	margin: 1rem;
+	padding: 0 0.5rem;
+	height: 1.8rem;
+	background-color: white;
+	border: 1px solid #ddd;
+	color: #777;
 }
 
 /* blocs vidéos */
@@ -125,4 +128,19 @@ footer > div {
 
 .views-element-container .field--name-uid a {
 	color: #333;
+}
+
+/* footer */
+footer {
+	margin-top: 3em;
+}
+
+footer .menu {
+	text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+footer a {
+	color: #777;
 }
