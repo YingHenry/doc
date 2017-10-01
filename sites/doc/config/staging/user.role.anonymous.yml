@@ -13,5 +13,6 @@ permissions:
   - 'access content'
   - 'access site-wide contact form'
   - 'access user profiles'
+  - 'display eu cookie compliance popup'
   - 'search content'
   - 'view post access counter'

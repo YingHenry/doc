@@ -24,6 +24,7 @@ permissions:
   - 'delete media'
   - 'delete own collection content'
   - 'delete own doc content'
+  - 'display eu cookie compliance popup'
   - 'edit own collection content'
   - 'edit own doc content'
   - 'post comments'

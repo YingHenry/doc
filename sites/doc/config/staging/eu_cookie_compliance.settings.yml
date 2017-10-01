@@ -1,0 +1,32 @@
+domain: ''
+domains_option: 1
+domains_list: ''
+eu_only: false
+exclude_paths: "/admin\r\n/admin/*\r\n/batch\r\n/node/add*\r\n/node/*/*\r\n/user/*/*"
+export:
+  folder: custom
+langcode: fr
+popup_agreed:
+  value: '<h2>Merci d''avoir accepté les cookies.</h2><p>Vous pouvez à présent fermer ce message ou en savoir plus sur les cookies.</p>'
+  format: restricted_html
+popup_agree_button_message: 'J''accepte'
+popup_agreed_enabled: false
+popup_bg_hex: 0779BF
+popup_clicking_confirmation: true
+popup_delay: 1
+popup_disagree_button_message: 'Non, donnez-moi plus d''informations'
+popup_enabled: true
+popup_find_more_button_message: 'Plus d''infos'
+popup_height: null
+popup_hide_agreed: false
+popup_hide_button_message: Cacher
+popup_info:
+  value: '<h2>Nous utilisons les cookies pour améliorer votre expérience utilisateur</h2><p>En cliquant sur un lien sur cette page vous acceptez l''utilisation des cookies.</p>'
+  format: restricted_html
+popup_link: 'https://www.cnil.fr/fr/cookies-les-outils-pour-les-maitriser'
+popup_link_new_window: true
+popup_position: false
+popup_text_hex: ffffff
+popup_width: 100%
+_core:
+  default_config_hash: kfXrsolOPAF-91bVNi2WkyMavN4TSaqPeL_A466DYwU
