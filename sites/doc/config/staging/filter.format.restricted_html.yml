@@ -1,6 +1,6 @@
 uuid: f80e51a4-f422-45bd-b4d7-7081362ef920
 langcode: fr
-status: true
+status: false
 dependencies: {  }
 _core:
   default_config_hash: KUjJ8Ti_ZJSlhGM88E_mhJP-8mmQRNUB6RFof615Kt0

@@ -5,7 +5,7 @@ dependencies:
   module:
     - taxonomy
 id: taxonomy_term
-label: 'Taxonomy term'
+label: 'Terme de taxonomie'
 type: 'canonical_entities:taxonomy_term'
 pattern: '[term:vocabulary]/[term:name]'
 selection_criteria: {  }

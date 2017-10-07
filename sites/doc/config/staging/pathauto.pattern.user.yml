@@ -5,9 +5,9 @@ dependencies:
   module:
     - user
 id: user
-label: User
+label: Utilisateur
 type: 'canonical_entities:user'
-pattern: 'user/[user:account-name]'
+pattern: '[user:account-name]'
 selection_criteria: {  }
 selection_logic: and
 weight: 0
