@@ -1,6 +1,9 @@
 /* général */
 @import url('https://fonts.googleapis.com/css?family=Satisfy');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+img {
+  display: block;
+}
 
 a {
 	text-decoration: none;
@@ -117,6 +120,11 @@ footer > div {
 .views-element-container .doc-image,
 .views-element-container .doc-info {
 	float: left;
+}
+
+.views-element-container .doc-image {
+	box-shadow: 0.3rem 0.3rem 0.5rem rgba(0,0,0,0.1);
+	margin-bottom: 0.5rem;
 }
 
 .views-element-container .doc-info {
