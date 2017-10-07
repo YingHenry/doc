@@ -1,10 +1,10 @@
-uuid: a8acf46c-5179-4d1c-b92d-d52a458fd889
+uuid: 7965a5a1-0f98-44ed-a27a-985d13ad4def
 langcode: fr
 status: true
 dependencies:
   module:
     - media_entity
-id: media.list
-label: Liste
+id: media.112x176
+label: 112x176
 targetEntityType: media
 cache: true

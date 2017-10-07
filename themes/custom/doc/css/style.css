@@ -1,5 +1,6 @@
 /* général */
 @import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 
 a {
 	text-decoration: none;
@@ -19,7 +20,7 @@ h2 {
 #header > div,
 #main,
 footer > div {
-  max-width: 68.625rem;
+  max-width: 80rem;
   margin: 0 auto;
 }
 
@@ -102,7 +103,7 @@ footer > div {
 	color: #777;
 }
 
-/* blocs vidéos */
+/* blocs docs */
 .views-element-container .view-content {
 	overflow: hidden;
 }
@@ -110,14 +111,23 @@ footer > div {
 .views-element-container .view-content > article,
 .views-element-container .view-content > .views-row {
 	float: left;
-	width: 13.125rem;
-	margin-right: 0.5rem;
 	margin-top: 1rem;
 }
 
+.views-element-container .doc-image,
+.views-element-container .doc-info {
+	float: left;
+}
+
+.views-element-container .doc-info {
+	width: 7rem;
+  margin: 0 1rem;
+  word-wrap: break-word;
+}
+
 .views-element-container .no-image {
-	width: 13.125rem;
-	height: 7.5rem;
+	width: 7rem;
+	height: 11rem;
 	background-color: #eee;
 	display: block;
 }
@@ -125,7 +135,11 @@ footer > div {
 .views-element-container .view-content h2 {
   margin: 0.5rem 0 0.2rem;
   font-size: 1.0rem;
-  font-family: Arial;
+  font-family: sans-serif;
+}
+
+.views-element-container .view-content a {
+  color: #555;
 }
 
 .views-element-container .field--name-uid,

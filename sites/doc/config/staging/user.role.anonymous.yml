@@ -15,4 +15,5 @@ permissions:
   - 'access user profiles'
   - 'display eu cookie compliance popup'
   - 'search content'
+  - 'view media'
   - 'view post access counter'

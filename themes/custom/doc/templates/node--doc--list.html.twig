@@ -80,16 +80,20 @@
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-    {% if content.field_media.0 %}
-      {{ content.field_media }}
-    {% else %}
-      <a class="no-image" href="{{ url }}" title="doc"></a>
-    {% endif %}
-    <h2{{ title_attributes.addClass('node__title') }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-    {{ author_name }}
-    {{ content.links }}
-    <div class="created-ago">{{ createdAgo }}</div>
+    <div class="doc-image">
+      {% if content.field_media.0 %}
+        {{ content.field_media }}
+      {% else %}
+        <a class="no-image" href="{{ url }}" title="doc"></a>
+      {% endif %}
+    </div>
+    <div class="doc-info">
+      <h2{{ title_attributes.addClass('node__title') }}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
+      {{ author_name }}
+      {{ content.links }}
+      <div class="created-ago">{{ createdAgo }}</div>
+    </div>
   </div>
 </article>

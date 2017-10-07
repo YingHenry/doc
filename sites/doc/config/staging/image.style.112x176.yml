@@ -1,0 +1,14 @@
+uuid: cefe5c8e-11aa-4c97-a565-513bb4a6c5bc
+langcode: fr
+status: true
+dependencies: {  }
+name: 112x176
+label: 112x176
+effects:
+  5304db44-d72f-4389-921f-5989f0a06d52:
+    uuid: 5304db44-d72f-4389-921f-5989f0a06d52
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 112
+      height: 176
