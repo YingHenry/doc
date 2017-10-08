@@ -175,3 +175,51 @@ footer .menu {
 footer a {
 	color: #777;
 }
+
+/* bouton abonnement */
+#subscription:hover {
+	cursor: pointer;
+}
+
+.page-node-type-doc header {
+	overflow: hidden;
+}
+
+.page-node-type-doc .doc-image,
+.page-node-type-doc .doc-info {
+	float: left;
+}
+
+.page-node-type-doc .no-image {
+	width: 7rem;
+	height: 11rem;
+	background-color: #eee;
+	display: block;
+}
+
+.page-node-type-doc .doc-info {
+	padding: 0.5rem 1rem;
+}
+
+.page-node-type-doc h2 {
+	margin: 0 0 1rem;
+}
+
+.page-node-type-doc .field--name-uid,
+.page-node-type-doc .profile {
+	float: left;
+}
+
+.page-node-type-doc .profile {
+	margin-left: 1rem;
+}
+
+.page-node-type-doc .statistics-counter {
+	padding: 0;
+}
+
+.page-node-type-doc .field--name-body {
+	width: 25rem;
+  margin: 3rem auto;
+  text-align: justify;
+}

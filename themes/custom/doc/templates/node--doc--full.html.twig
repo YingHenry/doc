@@ -80,23 +80,27 @@
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
   <header>
-    {{ title_prefix }}
-    {% if not page %}
+    <div class="doc-image">
+      {% if content.field_media.0 %}
+        {{ content.field_media }}
+      {% else %}
+        <div class="no-image"></div>
+      {% endif %}
+    </div>
+    <div class="doc-info">
       <h2{{ title_attributes.addClass('node__title') }}>
-        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        {{ label }}
       </h2>
-    {% endif %}
-    {{ title_suffix }}
-    {% if display_submitted %}
-      <div class="node__meta">
+      <div id="author" class="clearfix">
+        {{ author_name }}
         {{ author_picture }}
-        <span{{ author_attributes }}>
-          {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        </span>
       </div>
-    {% endif %}
+      {{ content.links }}
+      {% set date = node.createdtime|format_date('long') %}
+      {{ date }}
+    </div>
   </header>
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-    {{ content }}
+    {{ content.body }}
   </div>
 </article>

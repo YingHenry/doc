@@ -1,0 +1,40 @@
+uuid: d8a4c6da-48d5-4e8d-b92e-a8b9afcff1e3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.doc.body
+    - field.field.node.doc.field_media
+    - node.type.doc
+  module:
+    - text
+    - user
+id: node.doc.full
+targetEntityType: node
+bundle: doc
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_media:
+    weight: 102
+    label: hidden
+    settings:
+      view_mode: 112x176
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
