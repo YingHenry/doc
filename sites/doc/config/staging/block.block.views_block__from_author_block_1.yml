@@ -1,0 +1,33 @@
+uuid: e434825a-ce98-4077-918c-af0fbe7d0f0b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.from_author
+  module:
+    - node
+    - views
+  theme:
+    - doc
+id: views_block__from_author_block_1
+theme: doc
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:from_author-block_1'
+settings:
+  id: 'views_block:from_author-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      doc: doc
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

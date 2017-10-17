@@ -23,7 +23,11 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   body: true
   langcode: true
-  links: true

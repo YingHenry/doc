@@ -205,8 +205,8 @@ footer a {
 	margin: 0 0 1rem;
 }
 
-.page-node-type-doc .field--name-uid,
-.page-node-type-doc .profile {
+.page-node-type-doc #author .field--name-uid,
+.page-node-type-doc #author .profile {
 	float: left;
 }
 

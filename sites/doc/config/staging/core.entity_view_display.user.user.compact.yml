@@ -5,12 +5,11 @@ dependencies:
   config:
     - core.entity_view_mode.user.compact
     - field.field.user.user.field_collection
+    - field.field.user.user.field_follower_count
     - field.field.user.user.field_presentation
     - field.field.user.user.field_subscription
     - field.field.user.user.user_picture
-    - image.style.thumbnail
   module:
-    - image
     - user
 _core:
   default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
@@ -18,19 +17,12 @@ id: user.user.compact
 targetEntityType: user
 bundle: user
 mode: compact
-content:
-  user_picture:
-    type: image
-    weight: 0
-    region: content
-    settings:
-      image_style: thumbnail
-      image_link: content
-    third_party_settings: {  }
-    label: hidden
+content: {  }
 hidden:
   field_collection: true
+  field_follower_count: true
   field_presentation: true
   field_subscription: true
   langcode: true
   member_for: true
+  user_picture: true
