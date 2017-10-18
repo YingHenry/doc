@@ -59,7 +59,9 @@ footer > div {
 	margin: 1rem 0 0;
 }
 
-#views-exposed-form-search-page-1 #edit-combine {
+/* Groupe de champ ou Mot-clés de recherche */
+#views-exposed-form-search-page-1 #edit-combine,
+#views-exposed-form-search-page-1 #edit-keys {
 	border: 1px solid #ddd;
   height: 1.5rem;
   width: 25rem;

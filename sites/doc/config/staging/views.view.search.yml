@@ -3,10 +3,12 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.list
     - field.storage.node.body
     - node.type.doc
   module:
     - node
+    - search
     - text
     - user
 id: search
@@ -73,12 +75,10 @@ display:
       style:
         type: default
       row:
-        type: fields
+        type: 'entity:node'
         options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
+          relationship: none
+          view_mode: list
       fields:
         title:
           id: title
@@ -243,24 +243,24 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
-        combine:
-          id: combine
-          table: views
-          field: combine
+        keys:
+          id: keys
+          table: node_search_index
+          field: keys
           relationship: none
           group_type: group
           admin_label: ''
-          operator: word
+          operator: optional
           value: ''
           group: 1
           exposed: true
           expose:
-            operator_id: combine_op
+            operator_id: keys_op
             label: ''
             description: ''
             use_operator: false
-            operator: combine_op
-            identifier: combine
+            operator: keys_op
+            identifier: keys
             required: false
             remember: false
             multiple: false
@@ -280,10 +280,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          fields:
-            title: title
-            body: body
-          plugin_id: combine
+          plugin_id: search_keywords
       sorts:
         created:
           id: created

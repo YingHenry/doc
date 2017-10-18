@@ -28,7 +28,6 @@ permissions:
   - 'edit own collection content'
   - 'edit own doc content'
   - 'post comments'
-  - 'search content'
   - 'skip comment approval'
   - 'update media'
   - 'use text format full_html'
