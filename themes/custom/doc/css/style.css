@@ -14,6 +14,12 @@ a:hover {
 	text-decoration: underline;
 }
 
+h1 {
+	margin : 2rem 0;
+	color: #777;
+	font-size: 2rem;
+}
+
 h2 {
 	margin : 2rem 0 0;
 	color: #777;
@@ -178,11 +184,7 @@ footer a {
 	color: #777;
 }
 
-/* bouton abonnement */
-#subscription:hover {
-	cursor: pointer;
-}
-
+/* doc */
 .page-node-type-doc header {
 	overflow: hidden;
 }
@@ -224,4 +226,49 @@ footer a {
 	width: 25rem;
   margin: 3rem auto;
   text-align: justify;
+}
+
+/* user */
+.path-user .left,
+.path-user .right {
+	float: left;
+}
+
+.path-user .right {
+	margin: 0 0 0 2rem;
+	width: 22rem;
+  text-align: justify;
+}
+
+.path-user .field__label,
+.path-user .label {
+	margin: 0 0 1rem;
+	color: #555;
+	font-size: 1rem;
+}
+
+.path-user .form-item {
+  margin: 0 0 1rem;
+}
+
+.path-user .form-item,
+.path-user .field__item {
+	font-size: 0.9rem;
+}
+
+#subscription:hover {
+	cursor: pointer;
+}
+
+.path-user #subscription {
+	margin: 2rem 0 0;
+	text-align: center;
+}
+
+#subscription span {
+  background-color: #ACC;
+  padding: 0.5rem 0.7rem;
+  border-radius: 4px;
+  font-weight: bold;
+  color: white;
 }

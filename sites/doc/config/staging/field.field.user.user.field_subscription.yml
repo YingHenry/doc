@@ -10,7 +10,7 @@ id: user.user.field_subscription
 field_name: field_subscription
 entity_type: user
 bundle: user
-label: Abonnement
+label: Abonnement(s)
 description: ''
 required: false
 translatable: false

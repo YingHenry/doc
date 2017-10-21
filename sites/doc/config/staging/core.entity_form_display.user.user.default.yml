@@ -3,16 +3,13 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_collection
     - field.field.user.user.field_follower_count
     - field.field.user.user.field_presentation
     - field.field.user.user.field_subscription
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
-    - entity_browser_entity_form
     - image
-    - inline_entity_form
     - path
     - text
     - user
@@ -33,21 +30,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_collection:
-    weight: 3
-    settings:
-      form_mode: default
-      label_singular: ''
-      label_plural: ''
-      allow_new: true
-      match_operator: CONTAINS
-      override_labels: false
-      allow_existing: false
-    third_party_settings:
-      entity_browser_entity_form:
-        entity_browser_id: _none
-    type: inline_entity_form_complex
-    region: content
   field_follower_count:
     weight: 9
     settings:

@@ -3,7 +3,6 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_collection
     - field.field.user.user.field_follower_count
     - field.field.user.user.field_presentation
     - field.field.user.user.field_subscription
@@ -20,14 +19,6 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
-  field_collection:
-    weight: 3
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_follower_count:
     weight: 5
     label: above

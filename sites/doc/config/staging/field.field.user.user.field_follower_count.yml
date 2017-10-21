@@ -10,7 +10,7 @@ id: user.user.field_follower_count
 field_name: field_follower_count
 entity_type: user
 bundle: user
-label: Abonnés
+label: Abonné(s)
 description: ''
 required: false
 translatable: false

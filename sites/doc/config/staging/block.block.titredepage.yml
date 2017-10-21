@@ -1,0 +1,25 @@
+uuid: 75307097-7982-4a41-a42c-b45cd87797f5
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - doc
+id: titredepage
+theme: doc
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Titre de page'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,30 @@
+uuid: a689b7d8-e57d-423f-9a44-87521afbb856
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.author_doc
+  module:
+    - system
+    - views
+  theme:
+    - doc
+id: views_block__author_doc_block_1
+theme: doc
+region: content
+weight: 1
+provider: null
+plugin: 'views_block:author_doc-block_1'
+settings:
+  id: 'views_block:author_doc-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*'
+    negate: false
+    context_mapping: {  }

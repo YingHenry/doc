@@ -1,14 +1,14 @@
 uuid: dd6e7b06-8828-491e-b331-973f51bbf043
 langcode: fr
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.user.full
-    - field.field.user.user.field_collection
+    - field.field.user.user.field_follower_count
     - field.field.user.user.field_presentation
     - field.field.user.user.field_subscription
     - field.field.user.user.user_picture
-    - image.style.thumbnail
+    - image.style.medium
   module:
     - image
     - text
@@ -20,14 +20,6 @@ targetEntityType: user
 bundle: user
 mode: full
 content:
-  field_collection:
-    weight: 3
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_presentation:
     weight: 2
     label: above
@@ -36,7 +28,7 @@ content:
     type: text_default
     region: content
   field_subscription:
-    weight: 4
+    weight: 3
     label: above
     settings:
       link: true
@@ -44,18 +36,19 @@ content:
     type: entity_reference_label
     region: content
   member_for:
-    weight: 0
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
   user_picture:
     type: image
-    weight: 1
+    weight: 0
     region: content
     settings:
-      image_style: thumbnail
+      image_style: medium
       image_link: content
     third_party_settings: {  }
     label: hidden
 hidden:
+  field_follower_count: true
   langcode: true

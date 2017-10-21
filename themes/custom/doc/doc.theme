@@ -1,1 +1,6 @@
 <?php
+
+function doc_theme_suggestions_user_alter(array &$suggestions, array $variables, $hook) {
+  $suggestions[] = $variables['theme_hook_original'] . '__' . str_replace('-', '_', $variables['elements']['#view_mode']);
+  return $suggestions;
+}
