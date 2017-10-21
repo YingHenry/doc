@@ -205,6 +205,10 @@ footer a {
 	padding: 0.5rem 1rem;
 }
 
+.page-node-type-doc #author{
+	margin-bottom: 1rem;
+}
+
 .page-node-type-doc h2 {
 	margin: 0 0 1rem;
 }

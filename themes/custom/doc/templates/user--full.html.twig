@@ -21,7 +21,10 @@
   	<div class="clearfix">
   		<div class="left">
 	  		{{ content.user_picture }}
-	  		<div id="subscription"><span>{{ subscription }}</span></div>
+
+				{% if logged_in %}
+			  	<div id="subscription"><span>{{ subscription }}</span></div>
+				{% endif %}
   		</div>
   		<div class="right">
   			{{ content.member_for }}
