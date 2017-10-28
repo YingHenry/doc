@@ -276,3 +276,9 @@ footer a {
   font-weight: bold;
   color: white;
 }
+
+/* conditions d'utilisation */
+#edit-terms-of-use {
+	height: 20rem;
+	overflow: scroll;
+}

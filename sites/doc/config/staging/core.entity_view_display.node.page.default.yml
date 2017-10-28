@@ -3,14 +3,23 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.node.page.body
     - node.type.page
   module:
+    - text
     - user
 id: node.page.default
 targetEntityType: node
 bundle: page
 mode: default
 content:
+  body:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   links:
     weight: 100
     region: content
