@@ -68,19 +68,23 @@ footer > div {
 /* Groupe de champ ou Mot-clés de recherche */
 #views-exposed-form-search-page-1 #edit-combine,
 #views-exposed-form-search-page-1 #edit-keys {
-	border: 1px solid #ddd;
-  height: 1.5rem;
-  width: 25rem;
-  padding: 0 0.5rem;
+	border: 2px solid #ddd;
+	height: 2rem;
+	width: 25rem;
+	padding: 0 0.5rem;
 }
 
 #views-exposed-form-search-page-1 #edit-submit-search {
-  height: 1.875rem;
-  border-left: none;
-  background-color: white;
-  padding: 0 0.5rem;
-  color: #777;
-  border: none;
+	width: 2rem;
+	height: 2rem;
+	border-left: none;
+	background-color: white;
+	padding: 0;
+	margin: 0.1rem 0.4rem;
+	color: #777;
+	border: none;
+	text-indent: -9999px;
+	background: url(../images/search.png) no-repeat;
 }
 
 /* bloc utilisateur */
@@ -281,4 +285,12 @@ footer a {
 #edit-terms-of-use {
 	height: 20rem;
 	overflow: scroll;
+}
+
+/* crédit */
+#icon-credit {
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+  color: #444;
 }
