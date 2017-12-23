@@ -1,24 +1,24 @@
-uuid: 1997c5a7-e04d-4f50-aa72-8450f0fcf889
+uuid: 5330210b-b27c-4ab7-b2ae-674529462e58
 langcode: fr
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.media.112x176
+    - core.entity_view_mode.media.64x64
     - field.field.media.image.field_image
-    - image.style.112x176
+    - image.style.64x64
     - media_entity.bundle.image
   module:
     - image
-id: media.image.112x176
+id: media.image.64x64
 targetEntityType: media
 bundle: image
-mode: 112x176
+mode: 64x64
 content:
   field_image:
     weight: 0
     label: hidden
     settings:
-      image_style: 112x176
+      image_style: 64x64
       image_link: ''
     third_party_settings: {  }
     type: image

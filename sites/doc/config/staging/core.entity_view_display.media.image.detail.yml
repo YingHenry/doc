@@ -1,6 +1,6 @@
 uuid: 7030b7ba-46f3-46ff-a9a0-02866c82d733
 langcode: fr
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.media.detail

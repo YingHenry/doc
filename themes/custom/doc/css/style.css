@@ -1,5 +1,4 @@
 /* général */
-@import url('https://fonts.googleapis.com/css?family=Satisfy');
 
 img {
   display: block;
@@ -20,12 +19,6 @@ h1 {
 	font-size: 2rem;
 }
 
-h2 {
-	margin : 2rem 0 0;
-	color: #777;
-	font-size: 1.5rem;
-}
-
 #header > div,
 #main,
 footer > div {
@@ -33,58 +26,9 @@ footer > div {
   margin: 0 auto;
 }
 
-/* bloc logo */
-#block-doc-branding {
+/* navigation */
+#block-navigationprincipale {
 	float: left;
-}
-
-#block-doc-branding .site-name {
-  margin: 0 1.5rem 0 0.5rem;
-  font-size: 3rem;
-  font-weight: bold;
-  letter-spacing: -2px;
-}
-
-#block-doc-branding .site-name a {
-	color: #ACC;
-	font-family: 'Satisfy', cursive;
-}
-
-#block-doc-branding .site-name a:hover {
-	text-decoration: none;
-}
-
-/* bloc recherche */
-#block-formulaireexposesearchpage-1,
-#views-exposed-form-search-page-1 #edit-actions {
-	float: left;
-	clear: none;
-}
-
-#views-exposed-form-search-page-1 > div > div {
-	margin: 1rem 0 0;
-}
-
-/* Groupe de champ ou Mot-clés de recherche */
-#views-exposed-form-search-page-1 #edit-combine,
-#views-exposed-form-search-page-1 #edit-keys {
-	border: 2px solid #ddd;
-	height: 2rem;
-	width: 25rem;
-	padding: 0 0.5rem;
-}
-
-#views-exposed-form-search-page-1 #edit-submit-search {
-	width: 2rem;
-	height: 2rem;
-	border-left: none;
-	background-color: white;
-	padding: 0;
-	margin: 0.1rem 0.4rem;
-	color: #777;
-	border: none;
-	text-indent: -9999px;
-	background: url(../images/search.png) no-repeat;
 }
 
 /* bloc utilisateur */
@@ -118,64 +62,37 @@ footer > div {
 	color: #777;
 }
 
-/* blocs docs */
-.views-element-container .view-content {
-	overflow: hidden;
+/* node doc */
+.doc {
+	margin: 0.5rem;
 }
 
-.views-element-container .view-content > article,
-.views-element-container .view-content > .views-row {
+.doc-image {
+	width: 4rem;
 	float: left;
-	margin-top: 1rem;
+	margin: 0 0.5rem 0 0;
 }
 
-.views-element-container .doc-image,
-.views-element-container .doc-info {
-	float: left;
+.doc-image img {
+	border-radius: 6px;
 }
 
-.views-element-container .doc-image {
-	box-shadow: 0.3rem 0.3rem 0.5rem rgba(0,0,0,0.1);
-	margin-bottom: 0.5rem;
+.doc-title {
+	color: #444;
+	font-size: 1rem;
 }
 
-.views-element-container .doc-info {
-	width: 7rem;
-  margin: 0 1rem;
-  word-wrap: break-word;
+.doc-body {
+	margin: 0 ;
 }
 
-.views-element-container .no-image {
-	width: 7rem;
-	height: 11rem;
-	background-color: #eee;
-	display: block;
-}
-
-.views-element-container .view-content h2 {
-  margin: 0.5rem 0 0.2rem;
-  font-size: 1.0rem;
-  font-family: sans-serif;
-}
-
-.views-element-container .view-content a {
-  color: #555;
-}
-
-.views-element-container .field--name-uid,
-.views-element-container .statistics-counter,
-.views-element-container .created-ago {
-	font-size: 0.9rem;
-	padding: 0;
-}
-
-.views-element-container .field--name-uid a {
-	color: #333;
+footer.doc-footer{
+	margin: 0 0 1rem;
 }
 
 /* footer */
 footer {
-	margin-top: 3em;
+	margin-top: 3rem;
 }
 
 footer .menu {
@@ -287,10 +204,3 @@ footer a {
 	overflow: scroll;
 }
 
-/* crédit */
-#icon-credit {
-  text-align: center;
-  font-size: 0.8rem;
-  margin: 0.5rem 0;
-  color: #444;
-}

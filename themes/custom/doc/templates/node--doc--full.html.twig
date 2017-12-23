@@ -66,20 +66,8 @@
  * @see template_preprocess_node()
  */
 #}
-{%
-  set classes = [
-    'node',
-    'node--type-' ~ node.bundle|clean_class,
-    node.isPromoted() ? 'node--promoted',
-    node.isSticky() ? 'node--sticky',
-    not node.isPublished() ? 'node--unpublished',
-    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
-    'clearfix',
-  ]
-%}
-{{ attach_library('classy/node') }}
-<article{{ attributes.addClass(classes) }}>
-  <header>
+<article class="doc">
+  <header class="doc-header clearfix">
     <div class="doc-image">
       {% if content.field_media.0 %}
         {{ content.field_media }}
@@ -87,20 +75,18 @@
         <div class="no-image"></div>
       {% endif %}
     </div>
-    <div class="doc-info">
-      <h2{{ title_attributes.addClass('node__title') }}>
-        {{ label }}
-      </h2>
-      <div id="author" class="clearfix">
-        {{ author_name }}
-        {{ author_picture }}
-      </div>
-      {{ content.links }}
-      {% set date = node.createdtime|format_date('long') %}
-      {{ date }}
-    </div>
+    <h2 class="doc-title">
+      {{ label }}
+    </h2>
   </header>
-  <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
+  <div class="doc-body">
     {{ content.body }}
+    {{ content.links }}
   </div>
+  <footer class="doc-footer">
+    {% set date = node.createdtime|format_date('long') %}
+    {{ date }}
+    {% trans %}by{% endtrans %}
+    {{ author_name }}
+  </footer>
 </article>

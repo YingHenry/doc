@@ -1,0 +1,14 @@
+uuid: 52937218-3d2b-47a1-8011-aa2f1c011b4f
+langcode: fr
+status: true
+dependencies: {  }
+name: 64x64
+label: 64x64
+effects:
+  04b53167-312d-4229-bc32-763fdfc76d75:
+    uuid: 04b53167-312d-4229-bc32-763fdfc76d75
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 64
+      height: 64

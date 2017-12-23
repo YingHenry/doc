@@ -8,7 +8,9 @@ dependencies:
     - field.field.user.user.field_presentation
     - field.field.user.user.field_subscription
     - field.field.user.user.user_picture
+    - image.style.64x64
   module:
+    - image
     - user
 _core:
   default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
@@ -16,11 +18,19 @@ id: user.user.compact
 targetEntityType: user
 bundle: user
 mode: compact
-content: {  }
+content:
+  user_picture:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: 64x64
+      image_link: content
+    third_party_settings: {  }
 hidden:
   field_follower_count: true
   field_presentation: true
   field_subscription: true
   langcode: true
   member_for: true
-  user_picture: true

@@ -43,6 +43,7 @@ module:
   media_entity: 0
   menu_ui: 0
   node: 0
+  node_title_validation: 0
   options: 0
   page_cache: 0
   path: 0
@@ -60,6 +61,7 @@ module:
   tour: 0
   update: 0
   user: 0
+  views_infinite_scroll: 0
   views_ui: 0
   menu_link_content: 1
   pathauto: 1

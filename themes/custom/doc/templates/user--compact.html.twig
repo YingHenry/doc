@@ -17,10 +17,6 @@
  */
 #}
 <article{{ attributes.addClass('profile') }}>
-	{% if logged_in %}
-  	<div id="subscription"><span>{{ subscription }}</span></div>
-	{% endif %}
-
   {% if content %}
     {{- content -}}
   {% endif %}
