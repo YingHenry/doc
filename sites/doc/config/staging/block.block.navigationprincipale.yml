@@ -10,8 +10,8 @@ dependencies:
     - doc
 id: navigationprincipale
 theme: doc
-region: header
-weight: -5
+region: secondary_menu
+weight: -7
 provider: null
 plugin: 'system_menu_block:main'
 settings:

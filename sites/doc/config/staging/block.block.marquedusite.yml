@@ -1,0 +1,23 @@
+uuid: 214476e8-5c3b-4011-9794-ed0a475236fe
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - doc
+id: marquedusite
+theme: doc
+region: primary_menu
+weight: -8
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marque du site'
+  provider: system
+  label_display: '0'
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

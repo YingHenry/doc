@@ -10,25 +10,14 @@ base theme: classy
 #Using Classy as a base theme https://www.drupal.org/theme-guide/8/classy
 
 regions:
-  header: Header
   primary_menu: 'Primary menu'
   secondary_menu: 'Secondary menu'
-  page_top: 'Page top'
-  page_bottom: 'Page bottom'
   highlighted: Highlighted
-  featured_top: 'Featured top'
   breadcrumb: Breadcrumb
   content: Content
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
-  featured_bottom_first: 'Featured bottom first'
-  featured_bottom_second: 'Featured bottom second'
-  featured_bottom_third: 'Featured bottom third'
   footer_first: 'Footer first'
-  footer_second: 'Footer second'
-  footer_third: 'Footer third'
-  footer_fourth: 'Footer fourth'
-  footer_fifth: 'Footer fifth'
 
 ckeditor_stylesheets:
   - css/ckeditor.css

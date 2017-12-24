@@ -48,13 +48,30 @@ footer > div {
 	color: #555;
 }
 
-/* bloc langue*/
+/* bloc logo-langue*/
+.region-primary-menu {
+	overflow: hidden;
+}
+
+#block-marquedusite {
+	float: left;
+}
+
+#block-marquedusite a {
+  color: #ACC;
+  font-weight: bold;
+  font-size: 1.8rem;
+  letter-spacing: -2px;
+  display: block;
+  margin: 0.9rem 1rem 0;
+}
+
 #block-languagedropdownswitcher {
 	float: right;
 }
 
 #block-languagedropdownswitcher select {
-	margin: 1rem;
+	margin: 1rem 1rem 0 0;
 	padding: 0 0.5rem;
 	height: 1.8rem;
 	background-color: white;
@@ -62,10 +79,43 @@ footer > div {
 	color: #777;
 }
 
+/* navigation principale */
+.region-secondary-menu {
+	overflow: hidden;
+}
+
+#block-navigationprincipale,
+#block-navigationprincipale ul {
+	width: 100%;
+	overflow: hidden;
+	margin: 0.25rem 0;
+	position: relative;
+}
+
+#block-navigationprincipale li {
+	float: left;
+	width: 33%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+  display: table-cell; /* comportement visuel de cellule */
+  vertical-align: middle;
+}
+
+#block-navigationprincipale li a {
+  display: block;
+  padding: 0.75rem 0.4rem;
+  text-transform: uppercase;
+  color: #777;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
 /* node doc */
 .doc {
 	margin: 0 0.5rem 0.5rem;
-	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 0.75rem;
 }
 
 .doc-header:hover {
