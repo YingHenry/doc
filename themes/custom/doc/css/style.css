@@ -64,7 +64,12 @@ footer > div {
 
 /* node doc */
 .doc {
-	margin: 0.5rem;
+	margin: 0 0.5rem 0.5rem;
+	border-top: 1px solid #ddd;
+}
+
+.doc-header:hover {
+	cursor: pointer;
 }
 
 .doc-image {
@@ -73,21 +78,33 @@ footer > div {
 	margin: 0 0.5rem 0 0;
 }
 
-.doc-image img {
+.doc-image img,
+.no-image {
 	border-radius: 6px;
 }
 
 .doc-title {
 	color: #444;
 	font-size: 1rem;
+	margin: 0.5rem 0 0;
+}
+
+.doc-body-footer {
+	display: none;
 }
 
 .doc-body {
 	margin: 0 ;
 }
 
-footer.doc-footer{
-	margin: 0 0 1rem;
+.doc-footer{
+	margin: 0;
+}
+
+.no-image {
+	background-color: #eee;
+	width: 4rem;
+	height: 4rem;
 }
 
 /* footer */
@@ -103,54 +120,6 @@ footer .menu {
 
 footer a {
 	color: #777;
-}
-
-/* doc */
-.page-node-type-doc header {
-	overflow: hidden;
-}
-
-.page-node-type-doc .doc-image,
-.page-node-type-doc .doc-info {
-	float: left;
-}
-
-.page-node-type-doc .no-image {
-	width: 7rem;
-	height: 11rem;
-	background-color: #eee;
-	display: block;
-}
-
-.page-node-type-doc .doc-info {
-	padding: 0.5rem 1rem;
-}
-
-.page-node-type-doc #author{
-	margin-bottom: 1rem;
-}
-
-.page-node-type-doc h2 {
-	margin: 0 0 1rem;
-}
-
-.page-node-type-doc #author .field--name-uid,
-.page-node-type-doc #author .profile {
-	float: left;
-}
-
-.page-node-type-doc .profile {
-	margin-left: 1rem;
-}
-
-.page-node-type-doc .statistics-counter {
-	padding: 0;
-}
-
-.page-node-type-doc .field--name-body {
-	width: 25rem;
-  margin: 3rem auto;
-  text-align: justify;
 }
 
 /* user */

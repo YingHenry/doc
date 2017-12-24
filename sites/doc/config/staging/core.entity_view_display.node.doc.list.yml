@@ -4,7 +4,6 @@ status: false
 dependencies:
   config:
     - core.entity_view_mode.node.list
-    - field.field.node.doc.body
     - field.field.node.doc.field_media
     - node.type.doc
   module:
@@ -29,5 +28,4 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  body: true
   langcode: true
