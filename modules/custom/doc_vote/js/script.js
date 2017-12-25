@@ -1,7 +1,7 @@
 (function ($, Drupal) {
   Drupal.behaviors.doc_vote = {
     attach: function (context, settings) {
-      $('.upvote', context).once('docVoteBehavior').each(function () {
+      $('.upvote', context).once('docUpvoteBehavior').each(function () {
         $(this).click(function() {
           var nid = $(this).text();
           var messageDiv = $(this).parent().siblings('.message');
@@ -12,7 +12,7 @@
         });
       });
 
-      $('.downvote', context).once('docVoteBehavior').each(function () {
+      $('.downvote', context).once('docDownvoteBehavior').each(function () {
         $(this).click(function() {
           var nid = $(this).text();
           var messageDiv = $(this).parent().siblings('.message');
