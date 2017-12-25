@@ -1,0 +1,6 @@
+vote:
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings

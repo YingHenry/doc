@@ -1,0 +1,7 @@
+doc_vote.upvote:
+  path: '/vote/{js}/{action}/{nid}'
+  defaults:
+    _controller: '\Drupal\doc_vote\Controller\DocVoteController::vote'
+    _title: 'Upvote'
+  requirements:
+    _permission: 'access content'

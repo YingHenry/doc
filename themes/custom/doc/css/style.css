@@ -157,6 +157,44 @@ footer > div {
 	height: 4rem;
 }
 
+/* bloc vote */
+.vote-block {
+  margin: 1rem;
+}
+
+.vote-block > div:first-child {
+  margin: 0 auto;
+  width: 140px;
+}
+
+.upvote,
+.downvote {
+	float: left;
+	width: 64px;
+	height: 48px;
+	background: url(../images/upvote.png);
+	background-size: 100%;
+	border: 1px solid #eee;
+	border-radius: 6px;
+	text-indent: -9999px;
+}
+
+.upvote:hover,
+.downvote:hover {
+	cursor: pointer;
+}
+
+.downvote {
+	background: url(../images/downvote.png);
+	background-size: 100%;
+	margin-left: 0.5rem;
+}
+
+.vote-block .message {
+	margin: 0.5rem 0 0;
+	text-align: center;
+}
+
 /* footer */
 footer {
 	margin-top: 3rem;

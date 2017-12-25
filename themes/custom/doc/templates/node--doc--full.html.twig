@@ -66,7 +66,7 @@
  * @see template_preprocess_node()
  */
 #}
-<article class="doc">
+<article class="doc {{ node.id }}">
   <header class="doc-header clearfix">
     <div class="doc-image">
       {% if content.field_media.0 %}
@@ -90,6 +90,18 @@
       <div>
         {% trans %}by{% endtrans %}
         {{ author_name }}
+      </div>
+      <div class="vote-block">
+        <div class="clearfix">
+          <div class="upvote">
+            {{ node.id }}
+          </div>
+          <div class="downvote">
+            {{ node.id }}
+          </div>
+        </div>
+        <div class="message">
+        </div>
       </div>
     </footer>
   </div>

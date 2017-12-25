@@ -1,0 +1,28 @@
+uuid: 01d4d3f8-b3fc-40dd-8b99-3a5ba5b5c378
+langcode: fr
+status: true
+dependencies:
+  module:
+    - doc_vote
+    - node
+  theme:
+    - doc
+id: voteblock
+theme: doc
+region: content
+weight: 3
+provider: null
+plugin: doc_vote_block
+settings:
+  id: doc_vote_block
+  label: 'Vote block'
+  provider: doc_vote
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      doc: doc
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

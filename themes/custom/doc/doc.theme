@@ -1,6 +1,19 @@
 <?php
 
-function doc_theme_suggestions_user_alter(array &$suggestions, array $variables, $hook) {
-  $suggestions[] = $variables['theme_hook_original'] . '__' . str_replace('-', '_', $variables['elements']['#view_mode']);
-  return $suggestions;
+function doc_preprocess_node(&$variables) {
+	$node = $variables['node'];
+
+	if ($node->getType() == 'doc') {
+		$docVoteBlock = _doc_load_block('doc_vote_block');
+		$variables['docVoteBlock'] = $docVoteBlock;
+	}
+}
+
+function _doc_load_block($id) {
+  $blockManager = \Drupal::service('plugin.manager.block');
+  $blockConfig = [];
+  $blockPlugin = $blockManager->createInstance($id, $blockConfig);
+  $blockBuild = $blockPlugin->build();
+
+  return $blockBuild;
 }

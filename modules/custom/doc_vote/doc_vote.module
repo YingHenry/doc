@@ -1,0 +1,19 @@
+<?php
+
+function doc_vote_preprocess_node(&$variables) {
+	$node = $variables['node'];
+
+	if ($node->getType() == 'doc') {
+		$variables['#attached']['library'][] = 'doc_vote/vote';
+	}
+}
+
+function doc_vote_theme($existing, $type, $theme, $path) {
+  return [
+    'vote' => [
+      'variables' => [
+      	'data' => NULL
+      ],
+    ]
+  ];
+}

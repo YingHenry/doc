@@ -1,0 +1,42 @@
+<?php
+
+function doc_vote_schema() {
+  $schema['doc_vote'] = [
+    'description' => 'Stores vote entries.',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+        'description' => 'Primary Key: Unique vote ID.',
+      ],
+      'ip_address' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'IP address of the person.',
+      ],
+      'node_id' => [
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'size' => 'big',
+        'description' => 'node ID',
+      ],
+      'upvote' => [
+        'type' => 'int',
+        'not null' => TRUE,
+        'size' => 'tiny',
+        'default' => 1,
+        'description' => 'True if upvoted.',
+      ],
+    ],
+    'primary key' => ['id'],
+    'indexes' => [
+      'ip_address' => ['ip_address'],
+      'node_id' => ['node_id'],
+    ],
+  ];
+
+  return $schema;
+}

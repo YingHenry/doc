@@ -21,6 +21,7 @@ module:
   doc_history: 0
   doc_home: 0
   doc_subscription: 0
+  doc_vote: 0
   dynamic_page_cache: 0
   editor: 0
   entity: 0
