@@ -37,18 +37,21 @@ class DocVoteController extends ControllerBase {
           $fields['id'] = $result->id;
           $fields['upvote'] = $result->upvote == '0' ? 1 : 0;
           $this->update($fields);
+          $message = t('Your vote has been changed.');
         } else { // si la décision est là même on annule le vote
           $fields['id'] = $result->id;
           $this->delete($fields);
+          $message = t('Your vote has been cancelled.');
         }
       } else { // s'il n'a pas voté on crée une entrée
         $fields['upvote'] = $action;
         $this->insert($fields);
+        $message = t('Your vote has been saved.');
       }
     }
 
     $data = [
-      'message' => t('Your vote has been saved.'),
+      'message' => $message,
       'ip_address' => $ipAddress,
       'node_id' => $nid,
       'upvote' => 1,
