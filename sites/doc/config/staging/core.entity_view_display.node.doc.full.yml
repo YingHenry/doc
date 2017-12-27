@@ -24,8 +24,8 @@ content:
     region: content
     label: hidden
     settings:
+      pager_id: 1
       view_mode: default
-      pager_id: 0
     third_party_settings: {  }
   field_media:
     weight: 0
