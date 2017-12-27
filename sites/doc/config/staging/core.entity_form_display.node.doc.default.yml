@@ -3,10 +3,12 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.node.doc.field_comment
     - field.field.node.doc.field_media
     - field.field.node.doc.field_text
     - node.type.doc
   module:
+    - comment
     - entity_browser_entity_form
     - inline_entity_form
     - path
@@ -22,6 +24,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_comment:
+    weight: 34
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
+    region: content
   field_media:
     weight: 32
     settings:

@@ -1,11 +1,24 @@
 <?php
 
+use \Drupal\Core\Url;
+use \Drupal\Core\Form\FormStateInterface;
+
 function doc_preprocess_node(&$variables) {
 	$node = $variables['node'];
 
 	if ($node->getType() == 'doc') {
 		$docVoteBlock = _doc_load_block('doc_vote_block');
 		$variables['docVoteBlock'] = $docVoteBlock;
+	}
+}
+
+function doc_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+	if ($form_id == 'comment_comment_form' || $form_id == 'comment_comment_delete_form') { 
+		$form['actions']['submit']['#submit'][] = '_doc_comment_submit';
+	}
+
+	if ($form_id == 'comment_comment_form') {
+		$form['comment_body']['widget']['0']['#format'] = 'plain_text';
 	}
 }
 
@@ -16,4 +29,9 @@ function _doc_load_block($id) {
   $blockBuild = $blockPlugin->build();
 
   return $blockBuild;
+}
+
+function _doc_comment_submit(&$form, FormStateInterface $form_state) {
+  $url = Url::fromUri('internal:/hot');
+  $form_state->setRedirectUrl($url);
 }

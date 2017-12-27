@@ -3,11 +3,14 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment.default
     - core.entity_view_mode.node.full
+    - field.field.node.doc.field_comment
     - field.field.node.doc.field_media
     - field.field.node.doc.field_text
     - node.type.doc
   module:
+    - comment
     - text
     - user
 id: node.doc.full
@@ -15,6 +18,15 @@ targetEntityType: node
 bundle: doc
 mode: full
 content:
+  field_comment:
+    type: comment_default
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
   field_media:
     weight: 0
     label: hidden
