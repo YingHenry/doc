@@ -1,0 +1,10 @@
+uuid: f066175f-7828-47ce-a806-0963659b734f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media_entity
+id: media.48x48
+label: 48x48
+targetEntityType: media
+cache: true

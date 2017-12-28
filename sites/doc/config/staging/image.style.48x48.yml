@@ -1,0 +1,14 @@
+uuid: f994f1f5-e3fa-4fd5-aa5c-248a4e2a0fad
+langcode: fr
+status: true
+dependencies: {  }
+name: 48x48
+label: 48x48
+effects:
+  9532cbc4-bb5f-45e8-a4cd-7578379f546c:
+    uuid: 9532cbc4-bb5f-45e8-a4cd-7578379f546c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 48
+      height: 48

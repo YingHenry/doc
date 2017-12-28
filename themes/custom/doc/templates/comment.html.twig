@@ -77,9 +77,16 @@
 <article role="article"{{ attributes.addClass(classes)|without('role') }}>
   <footer class="comment__meta">
     {{ user_picture }}
-    <p class="comment__author">{{ author }}</p>
-    {% set createdDate = comment.getCreatedTime|format_date('long') %}
-    <p class="comment__time">{{ createdDate }}</p>
+    <div>
+      <div class="clearfix">
+        <p class="comment__author">{{ author }}</p>
+        {% set createdDate = comment.getCreatedTime|format_date('long') %}
+        <p class="comment__time">{{ createdDate }}</p>
+      </div>
+      <div{{ content_attributes.addClass('comment__content') }}>
+      {{ content }}
+      </div>
+    </div>
     {#
       Indicate the semantic relationship between parent and child comments
       for accessibility. The list is difficult to navigate in a screen
@@ -90,7 +97,5 @@
     {% endif %}
   </footer>
 
-  <div{{ content_attributes.addClass('comment__content') }}>
-    {{ content }}
-  </div>
+
 </article>
