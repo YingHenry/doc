@@ -11,7 +11,7 @@ _core:
 id: doc_help
 theme: doc
 region: content
-weight: -7
+weight: -5
 provider: null
 plugin: help_block
 settings:

@@ -1,7 +1,0 @@
-doc_subscription.toggleSubscription:
-  path: '/toggle-subscription/{js}/{uid}'
-  defaults:
-    _controller: '\Drupal\doc_subscription\Controller\DocSubscriptionController::toggleSubscription'
-    _title: 'Subscribe'
-  requirements:
-    _permission: 'access content'

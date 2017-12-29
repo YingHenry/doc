@@ -11,7 +11,7 @@ dependencies:
 id: navigationprincipale
 theme: doc
 region: secondary_menu
-weight: -7
+weight: -5
 provider: null
 plugin: 'system_menu_block:main'
 settings:

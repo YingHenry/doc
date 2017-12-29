@@ -1,6 +1,0 @@
-subscription:
-  js:
-    js/subscription.js: {}
-  dependencies:
-    - core/jquery
-    - core/drupalSettings
