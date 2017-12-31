@@ -7,8 +7,8 @@ export:
   folder: custom
 langcode: fr
 popup_agreed:
-  value: '<h2>Merci d''avoir accepté les cookies.</h2><p>Vous pouvez à présent fermer ce message ou en savoir plus sur les cookies.</p>'
-  format: restricted_html
+  value: "<h2>Merci d'avoir accepté les cookies.</h2>\r\n\r\n<p>Vous pouvez à présent fermer ce message ou en savoir plus sur les cookies.</p>\r\n"
+  format: full_html
 popup_agree_button_message: 'J''accepte'
 popup_agreed_enabled: false
 popup_bg_hex: 0779BF
@@ -21,8 +21,8 @@ popup_height: null
 popup_hide_agreed: false
 popup_hide_button_message: Cacher
 popup_info:
-  value: '<h2>Nous utilisons les cookies pour améliorer votre expérience utilisateur</h2><p>En cliquant sur un lien sur cette page vous acceptez l''utilisation des cookies.</p>'
-  format: restricted_html
+  value: "<h2>Nous utilisons les cookies pour améliorer votre expérience utilisateur</h2>\r\n\r\n<p>En cliquant sur un lien sur cette page vous acceptez l'utilisation des cookies.</p>\r\n"
+  format: full_html
 popup_link: 'https://www.cnil.fr/fr/cookies-les-outils-pour-les-maitriser'
 popup_link_new_window: true
 popup_position: false
