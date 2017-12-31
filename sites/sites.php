@@ -54,4 +54,8 @@
  * @see https://www.drupal.org/documentation/install/multi-site
  */
 
-$sites['doc'] = 'doc';
+$sites['docpunch.com'] = 'doc';
+
+if (file_exists($app_root . '/sites' . '/sites.local.php')) {
+  include $app_root .  '/sites' . '/sites.local.php';
+}

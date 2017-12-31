@@ -249,10 +249,7 @@
  *   );
  * @endcode
  */
-$config_directories = array(
-	'active' => $app_root . '/' . $site_path . '/config/active',
-	'staging' => $app_root . '/' . $site_path . '/config/staging',
-);
+$config_directories = array();
 
 /**
  * Settings:
@@ -298,7 +295,7 @@ $config_directories = array(
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'h4sXZSWr6mg7VXbtzUxvPU9imFmm7m7bV2Ath8qUEuzOnk0EGnu5T6lTjm6FeusEUzc3RvCLiw';
+$settings['hash_salt'] = '0fOOSD7iNqt4jc3ZwBLI6BQnMGmof6HxcQdUz6L4fKgpvvSps9mLHzQYkCpBb6EHDWTkPkaTqQ';
 
 /**
  * Deployment identifier.
@@ -763,10 +760,18 @@ $settings['file_scan_ignore_directories'] = [
  * Keep this code block at the end of this file to take full effect.
  */
 #
-if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-  include $app_root . '/' . $site_path . '/settings.local.php';
-}
-
-$GLOBALS['conf']['site_instance'] = 'doc';
+# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+#   include $app_root . '/' . $site_path . '/settings.local.php';
+# }
+$databases['default']['default'] = array (
+  'database' => 'docpunchub0',
+  'username' => 'docpunchub0',
+  'password' => 'afTG1328',
+  'prefix' => '',
+  'host' => 'docpunchub0.mysql.db',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
 $settings['install_profile'] = 'standard';
-$config_directories['sync'] = 'sites/doc/files/config_aI9d-h0BmXfexwXS7EK9k0zbHJncCoLnMFCr3bWSk573qWpnCaUwH_mw_btSYpp8sJUhx4Ii8A/sync';
+$config_directories['sync'] = 'sites/default/files/config_5JrQyXnS63tlNIgmQHYoUxLUo22tPfiv0TzL8GY1_qyyvviguu7Pku8lthCmNJA-Q442ZzZ_pg/sync';
