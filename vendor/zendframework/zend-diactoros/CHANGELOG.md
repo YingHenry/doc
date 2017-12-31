@@ -2,6 +2,72 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+## 1.6.1 - 2017-10-12
+
+### Added
+
+- Nothing.
+
+### Changed
+
+- [#273](https://github.com/zendframework/zend-diactoros/pull/273) updates each
+  of the SAPI emitter implementations to emit the status line after emitting
+  other headers; this is done to ensure that the status line is not overridden
+  by PHP.
+
+### Deprecated
+
+- Nothing.
+
+### Removed
+
+- Nothing.
+
+### Fixed
+
+- [#273](https://github.com/zendframework/zend-diactoros/pull/273) modifies how
+  the `SapiEmitterTrait` calls `header()` to ensure that a response code is
+  _always_ passed as the third argument; this is done to prevent PHP from
+  silently overriding it.
+
+## 1.6.0 - 2017-09-13
+
+### Added
+
+- Nothing.
+
+### Changed
+
+- [#270](https://github.com/zendframework/zend-diactoros/pull/270) changes the
+  behavior of `Zend\Diactoros\Server`: it no longer creates an output buffer.
+
+- [#270](https://github.com/zendframework/zend-diactoros/pull/270) changes the
+  behavior of the two SAPI emitters in two backwards-incompatible ways:
+
+  - They no longer auto-inject a `Content-Length` header. If you need this
+    functionality, zendframework/zend-expressive-helpers 4.1+ provides it via
+    `Zend\Expressive\Helper\ContentLengthMiddleware`.
+
+  - They no longer flush the output buffer. Instead, if headers have been sent,
+    or the output buffer exists and has a non-zero length, the emitters raise an
+    exception, as mixed PSR-7/output buffer content creates a blocking issue.
+    If you are emitting content via `echo`, `print`, `var_dump`, etc., or not
+    catching PHP errors or exceptions, you will need to either fix your
+    application to always work with a PSR-7 response, or provide your own
+    emitters that allow mixed output mechanisms.
+
+### Deprecated
+
+- Nothing.
+
+### Removed
+
+- Nothing.
+
+### Fixed
+
+- Nothing.
+
 ## 1.5.0 - 2017-08-22
 
 ### Added
