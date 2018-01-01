@@ -19,11 +19,9 @@ h1 {
 	font-size: 2rem;
 }
 
-#header > div,
-#main,
-footer > div {
-  /*max-width: 80rem;*/
-  margin: 0 auto;
+#page-wrapper {
+	max-width: 26rem;
+	margin: 0 auto;
 }
 
 /* navigation */
