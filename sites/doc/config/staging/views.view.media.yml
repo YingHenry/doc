@@ -279,7 +279,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Media name'
+          label: 'Nom du média'
           exclude: false
           element_type: ''
           element_class: ''
@@ -719,7 +719,7 @@ display:
           exposed: true
           expose:
             operator_id: name_op
-            label: 'Media name'
+            label: 'Nom du média'
             description: ''
             use_operator: false
             operator: name_op

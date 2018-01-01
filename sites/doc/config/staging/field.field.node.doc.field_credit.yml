@@ -1,0 +1,19 @@
+uuid: 8b54f637-9ae4-495f-8143-0e18ed607745
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_credit
+    - node.type.doc
+id: node.doc.field_credit
+field_name: field_credit
+entity_type: node
+bundle: doc
+label: Crédit
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

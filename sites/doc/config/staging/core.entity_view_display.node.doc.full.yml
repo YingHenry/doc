@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.doc.field_comment
+    - field.field.node.doc.field_credit
     - field.field.node.doc.field_media
     - field.field.node.doc.field_text
     - node.type.doc
@@ -16,6 +17,14 @@ targetEntityType: node
 bundle: doc
 mode: full
 content:
+  field_credit:
+    type: string
+    weight: 2
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   field_media:
     weight: 0
     label: hidden

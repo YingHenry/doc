@@ -47,5 +47,5 @@ tips:
     id: language-edit-continue
     plugin: text
     label: 'Continuant sur'
-    body: '<p>Maintenant que vous avez une vue d''ensemble de la fonctionnalité "Modifier une langue", vous pouvez continuer par: <ul><li>Modifier une langue</li><li><a href="[site:url]admin/config/regional/language">Afficher les langues configurées</a></li></ul></p>'
+    body: '<p>Maintenant que vous avez une vue d''ensemble de la fonctionnalité "Modifier une langue", vous pouvez continuer par : <ul><li>Modifier une langue</li><li><a href="[site:url]admin/config/regional/language">Afficher les langues configurées</a></li></ul></p>'
     weight: 5

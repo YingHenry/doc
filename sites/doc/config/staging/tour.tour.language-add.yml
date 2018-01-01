@@ -31,5 +31,5 @@ tips:
     id: language-add-continue
     plugin: text
     label: 'Continuant sur'
-    body: '<p>Maintenant que vous avez une vue d''ensemble de la fonctionnalité "Ajouter des langues", vous pouvez continuer par:<ul><li>Ajouter une langue</li><li>Ajouter une langue personnalisée</li><li> <a href="[site:url]admin/config/regional/language">Afficher les langues configurées</a></li></ul></p>'
+    body: "<p>Maintenant que vous avez une vue d'ensemble de la fonctionnalité \"Ajouter des langues\", vous pouvez continuer par :\r\n <ul><li>Ajouter une langue</li><li>Ajouter une langue personnalisée</li><li><a href=\"[site:url]admin/config/regional/language\">Afficher les langues configurées</a></li></ul></p>"
     weight: 3

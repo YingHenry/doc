@@ -157,6 +157,10 @@ footer > div {
 	height: 4rem;
 }
 
+.field--name-field-credit .field__label {
+	font-weight: normal;
+}
+
 /* bloc vote */
 .vote-block {
   margin: 1rem;
