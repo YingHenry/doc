@@ -5,3 +5,11 @@ doc_vote.upvote:
     _title: 'Upvote'
   requirements:
     _permission: 'access content'
+
+doc_vote.test:
+  path: '/doc-vote-promote'
+  defaults:
+    _controller: '\Drupal\doc_vote\Controller\DocVoteController::promote'
+    _title: 'Promotion'
+  requirements:
+    _permission: 'administer'

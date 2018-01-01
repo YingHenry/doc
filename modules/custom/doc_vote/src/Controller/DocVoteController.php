@@ -5,6 +5,7 @@ namespace Drupal\doc_vote\Controller;
 use \Drupal\Core\Controller\ControllerBase;
 use \Drupal\user\Entity\User;
 use \Symfony\Component\HttpFoundation\JsonResponse;
+use \Drupal\node\Entity\Node;
 
 class DocVoteController extends ControllerBase {
   public function vote($js, $action, $nid)
@@ -101,5 +102,53 @@ class DocVoteController extends ControllerBase {
     db_delete('doc_vote')
       ->condition('id', $entry['id'])
       ->execute();
+  }
+
+  public function promote() {
+    // on charge les node de type "doc" non promu en page d'accueil et datant de moins de x jours
+    $nids = \Drupal::entityQuery('node')
+      ->condition('type', 'doc')
+      ->condition('promote', 0)
+      ->condition('created', time() - 86400 * 7, '>')
+      ->execute();
+
+    // on cherche dans la table doc_vote les entrées pour ces nodes
+    if (!empty($nids)) {
+      $database = \Drupal::database();
+
+      $results = $database->select('doc_vote', 'd')
+        ->fields('d')
+        ->condition('node_id', $nids, 'IN')
+        ->execute()
+        ->fetchAll();
+
+      // on calcule les points pour chaque doc
+      $points = [];
+
+      foreach ($results as $result) {
+        if (!isset($points[$result->node_id])) {
+          $points[$result->node_id] = 0;
+        }
+
+        $points[$result->node_id] += $result->upvote == 1 ? 1 : -1;
+      }
+
+      // tri par ordre décroissant et récupération des nodes ayant le plus de points
+      arsort($points, SORT_NUMERIC);
+      $points = array_slice($points, 0, 2, true);
+      $nids = array_keys($points);
+      $nodes = Node::loadMultiple($nids);
+
+      foreach ($nodes as $nid => $node) {
+        $node->setPromoted(true);
+        $node->save();
+      }
+    }
+
+    $build = [
+      '#markup' => 'ok',
+    ];
+
+    return $build;
   }
 }
