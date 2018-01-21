@@ -1,6 +1,6 @@
 uuid: 229d546a-1d44-4236-bb66-9206d43d86e4
 langcode: fr
-status: true
+status: false
 dependencies:
   module:
     - lang_dropdown

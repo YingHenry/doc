@@ -4,9 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.user.register
-    - field.field.user.user.field_follower_count
     - field.field.user.user.field_presentation
-    - field.field.user.user.field_subscription
     - field.field.user.user.user_picture
   module:
     - user
@@ -22,11 +20,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  google_analytics:
+    weight: 3
+    region: content
 hidden:
   contact: true
-  field_follower_count: true
   field_presentation: true
-  field_subscription: true
   langcode: true
   language: true
   path: true

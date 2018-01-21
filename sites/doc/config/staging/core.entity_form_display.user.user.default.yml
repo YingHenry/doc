@@ -3,9 +3,7 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_follower_count
     - field.field.user.user.field_presentation
-    - field.field.user.user.field_subscription
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -30,13 +28,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_follower_count:
-    weight: 9
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: number
-    region: content
   field_presentation:
     weight: 2
     settings:
@@ -45,14 +36,8 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
-  field_subscription:
-    weight: 8
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
+  google_analytics:
+    weight: 3
     region: content
   language:
     weight: 4

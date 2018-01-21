@@ -85,7 +85,7 @@
       {{ content.links }}
     </div>
     <footer class="doc-footer">
-      {% set date = node.createdtime|format_date('long') %}
+      {% set date = node.createdtime|format_date('short') %}
       {{ date }}
       <div>
         {% trans %}by{% endtrans %}
