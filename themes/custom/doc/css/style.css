@@ -64,6 +64,10 @@ h1 {
   margin: 0.9rem 1rem 0;
 }
 
+#block-marquedusite a:hover {
+  text-decoration: none;
+}
+
 #block-languagedropdownswitcher {
 	float: right;
 }
