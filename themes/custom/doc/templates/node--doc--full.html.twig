@@ -86,11 +86,7 @@
     </div>
     <footer class="doc-footer">
       {% set date = node.createdtime|format_date('short') %}
-      {{ date }}
-      <div>
-        {% trans %}by{% endtrans %}
-        {{ author_name }}
-      </div>
+      {{ date }} {% trans %}by{% endtrans %} {{ author_name }}
       {{ content.field_credit }}
       {#
       <div class="vote-block">
