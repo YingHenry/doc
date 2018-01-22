@@ -71,6 +71,8 @@ settings:
             - ShowBlocks
             - Source
             - Language
+            - DrupalImage
+            - url
   plugins:
     stylescombo:
       styles: ''

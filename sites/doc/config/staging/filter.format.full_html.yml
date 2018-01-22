@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - editor
+    - url_embed
 _core:
   default_config_hash: hewPmBgni9jlDK_IjLxUx1HsTbinK-hdl0lOwjbteIY
 name: 'HTML complet'
@@ -43,3 +44,9 @@ filters:
       allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <p> <h1> <pre> <u> <span lang dir>'
       filter_html_help: true
       filter_html_nofollow: false
+  url_embed:
+    id: url_embed
+    provider: url_embed
+    status: true
+    weight: 0
+    settings: {  }

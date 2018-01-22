@@ -21,6 +21,7 @@ module:
   doc_vote: 0
   dynamic_page_cache: 0
   editor: 0
+  embed: 0
   entity: 0
   entity_browser: 0
   entity_browser_entity_form: 0
@@ -59,6 +60,7 @@ module:
   toolbar: 0
   tour: 0
   update: 0
+  url_embed: 0
   user: 0
   views_infinite_scroll: 0
   views_ui: 0

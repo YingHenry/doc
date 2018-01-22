@@ -1,0 +1,13 @@
+uuid: c9b5a63b-c8ae-4c49-9ba3-77419621fc5b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - url_embed
+_core:
+  default_config_hash: p_AtPbTd6niywC8P6zRfczYFjYLsejfH7Qcwo47ixCM
+label: URL
+id: url
+type_id: url
+type_settings: {  }
+icon_uuid: null
