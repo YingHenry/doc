@@ -29,8 +29,12 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
-        options: {  }
+        type: time
+        options:
+          results_lifespan: 3600
+          results_lifespan_custom: 0
+          output_lifespan: 3600
+          output_lifespan_custom: 0
       query:
         type: views_query
         options:
@@ -220,12 +224,15 @@ display:
   hot:
     display_plugin: page
     id: hot
-    display_title: Hot
+    display_title: Last
     position: 1
     display_options:
       display_extenders: {  }
       path: hot
       display_description: ''
+      title: ''
+      defaults:
+        title: false
     cache_metadata:
       max-age: -1
       contexts:
