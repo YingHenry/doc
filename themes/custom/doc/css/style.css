@@ -29,11 +29,6 @@ iframe {
 	margin: 0 auto;
 }
 
-/* navigation */
-#block-navigationprincipale {
-	float: left;
-}
-
 /* bloc utilisateur */
 #block-doc-account-menu {
 	float: right;
@@ -54,6 +49,10 @@ iframe {
 /* bloc logo-langue*/
 .region-primary-menu {
 	overflow: hidden;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  width: 100%;
 }
 
 #block-marquedusite {
@@ -91,6 +90,10 @@ iframe {
 	overflow: hidden;
 }
 
+#block-navigationprincipale {
+	float: left;
+}
+
 #block-navigationprincipale,
 #block-navigationprincipale ul {
 	width: 100%;
@@ -116,6 +119,10 @@ iframe {
   color: #777;
   font-weight: bold;
   letter-spacing: -1px;
+}
+
+#main-wrapper {
+	margin-top: 3.5rem;
 }
 
 /* node doc */
