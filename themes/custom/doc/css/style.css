@@ -20,6 +20,10 @@ h1 {
 	font-size: 2rem;
 }
 
+h2 {
+	color: #444;
+}
+
 iframe {
   width: 100%;
   margin: 1rem 0;
@@ -137,6 +141,11 @@ iframe {
 	cursor: pointer;
 }
 
+.doc-header a {
+	display: block;
+	overflow: hidden;
+}
+
 .doc-image {
 	width: 4rem;
 	float: left;
@@ -153,11 +162,11 @@ iframe {
 	font-size: 1rem;
 	margin: 0.5rem 0 0;
 }
-
+/*
 .doc-body-footer {
 	display: none;
 }
-
+*/
 .doc-body {
 	margin: 0 ;
 }

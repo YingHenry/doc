@@ -1,10 +1,13 @@
 uuid: e7afba7b-1e93-4323-9c8e-d1da44a1ca7f
 langcode: fr
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.node.list
+    - field.field.node.doc.field_comment
+    - field.field.node.doc.field_credit
     - field.field.node.doc.field_media
+    - field.field.node.doc.field_text
     - node.type.doc
   module:
     - user
@@ -17,15 +20,14 @@ content:
     weight: 0
     label: hidden
     settings:
-      view_mode: 112x176
+      view_mode: 64x64
       link: false
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
-  links:
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
+  field_comment: true
+  field_credit: true
+  field_text: true
   langcode: true
+  links: true
