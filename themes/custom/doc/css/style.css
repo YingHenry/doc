@@ -20,8 +20,9 @@ h1 {
 	font-size: 2rem;
 }
 
-h2 {
+.views-element-container h2 {
 	color: #444;
+	margin-left: 0.5rem;
 }
 
 iframe {
