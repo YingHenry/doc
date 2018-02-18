@@ -6,6 +6,6 @@ features:
 logo:
   use_default: 1
 favicon:
-  use_default: 0
-  path: themes/custom/doc/images/doc-logo.png
+  use_default: 1
+  path: 'public://favicon_2.png'
   mimetype: image/png
